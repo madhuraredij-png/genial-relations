@@ -1,3 +1,5 @@
+@import "../styles/tokens.css";
+
 html,
 body {
   margin: 0;
@@ -12,4 +14,11 @@ body {
 
 a {
   color: inherit;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
 }
