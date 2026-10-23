@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>puny · desktop, two columns</title>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&amp;family=Reenie+Beanie&amp;family=Jacquard+24&amp;family=IM+Fell+English:ital@0;1&amp;family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400&amp;family=Fraunces:opsz,wght@9..144,400;9..144,700&amp;family=EB+Garamond:ital,wght@0,400;0,600;1,400&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#141414}a:hover{color:#000}
+</style>
+</helmet>
+<div style="position: relative; width: 1440px; height: 900px; overflow: hidden; background: #F7F4EE; color: #141414; font-family: 'Inconsolata', ui-monospace, monospace">
+<svg aria-hidden="true" width="0" height="0" style="position: absolute"><defs>
+<filter id="wobble" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="4" result="w"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="w" scale="5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter>
+<filter id="pencil" x="-5%" y="-10%" width="110%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="2" seed="8" result="n"></feTurbulence><feColorMatrix in="n" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.8 0 0 0 1.45" result="m"></feColorMatrix><feComposite in="SourceGraphic" in2="m" operator="in" result="t"></feComposite><feTurbulence type="fractalNoise" baseFrequency="0.08" numOctaves="1" seed="2" result="d"></feTurbulence><feDisplacementMap in="t" in2="d" scale="1.2" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter>
+<filter id="crayon" x="-10%" y="-20%" width="120%" height="140%"><feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" seed="5" result="n"></feTurbulence><feColorMatrix in="n" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 1.6" result="m"></feColorMatrix><feComposite in="SourceGraphic" in2="m" operator="in" result="t"></feComposite><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="9" result="d"></feTurbulence><feDisplacementMap in="t" in2="d" scale="3" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter>
+<filter id="crumple" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.006" numOctaves="4" seed="7"></feTurbulence><feDiffuseLighting lighting-color="#ffffff" surfaceScale="2.4"><feDistantLight azimuth="225" elevation="58"></feDistantLight></feDiffuseLighting></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="1"></feTurbulence><feColorMatrix type="saturate" values="0"></feColorMatrix></filter>
+</defs></svg>
+<svg aria-hidden="true" width="1440" height="900" style="position: absolute; left: 0; top: 0; pointer-events: none; mix-blend-mode: multiply"><rect width="1440" height="900" filter="url(#crumple)" opacity="0.3"></rect></svg>
+<div style="position: relative; display: flex; justify-content: space-between; align-items: center; height: 64px; padding: 0 48px"><a href="Table.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; text-decoration: none">← Back with an accent</a><div style="font-size: 14px"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 20 20" style="vertical-align: -3px; margin-right: 6px; overflow: visible" fill="none" stroke-linecap="round" stroke-linejoin="round"><g style="filter: url(#crayon)" fill="#E8B923" stroke="none"><path d="M2.4 10 C2.2 4 17.6 3.4 17.6 10.2 C17.4 16.6 2.6 16.4 2.4 10 z"></path></g><g stroke="#23306E" stroke-width="1.3" style="filter: url(#wobble)"><path d="M2 10.2 C1.8 3.4 18 3 18 10 C18 17 2.2 17.2 2 10.2"></path><path d="M6 10 C6 6.8 14 6.6 14 10.2 C14 13.4 6.2 13.4 6 10"></path><path d="M4.6 7.4 q2 -2 5 -2.4"></path></g></svg>2/5</div></div><div style="position: relative; display: grid; grid-template-columns: 488px minmax(0, 1fr); gap: 130px; margin: 6px 80px 0"><div><div style="position: relative; width: 488px; height: 375px"><div style="position: absolute; left: 0; top: 0; width: 390px; height: 300px; transform: scale(1.25); transform-origin: 0 0"><div style="position: relative; height: 300px; margin-top: 4px">
+<svg aria-hidden="true" width="390" height="300" viewBox="0 0 390 300" style="position: absolute; left: 0; top: 0" fill="none" stroke-linecap="round">
+<path d="M0 118H390" stroke="#2E8B3E" stroke-width="1" stroke-dasharray="2 4"></path>
+<path d="M0 142H390" stroke="#2E8B3E" stroke-width="1" stroke-dasharray="2 4"></path>
+<path d="M0 162H390" stroke="#2E8B3E" stroke-width="1" stroke-dasharray="2 4"></path>
+<g style="filter: url(#crayon)" stroke="#2E8B3E" stroke-width="2">
+<path d="M120 112v56M114 112h12M114 168h12"></path>
+<path d="M232 100 C250 80 270 70 290 64"></path>
+<path d="M188 170 C190 200 200 214 214 226"></path>
+<path d="M150 104 C130 80 100 64 74 58"></path>
+<path d="M162 172 C140 210 90 240 56 262"></path>
+</g>
+</svg>
+<div style="position: absolute; left: 0; right: 0; top: 104px; text-align: center; font-family: 'IM Fell English', serif; font-size: 52px; line-height: 1">puny</div>
+<div style="position: absolute; left: 256px; top: 120px; width: 92px; height: 70px; display: flex; align-items: center; justify-content: center; border: 1.2px dashed rgba(35,48,110,0.7); border-radius: 50% 44% 52% 48%; font-size: 11px; text-align: center; line-height: 1.2; color: #23306E">[object-puny<br>judge's wig]</div>
+<div style="position: absolute; left: 20px; top: 30px; display: flex; align-items: center; gap: 6px; font-size: 12px"><span style="display: inline-flex; width: 22px; height: 22px; border: 2px solid #2E8B3E; border-radius: 52% 48% 55% 45%; align-items: center; justify-content: center; font-size: 11px; filter: url(#crayon)">1</span>1570s</div>
+<div style="position: absolute; left: 288px; top: 46px; display: flex; align-items: center; gap: 6px; font-size: 12px"><span style="display: inline-flex; width: 22px; height: 22px; border: 2px solid #2E8B3E; border-radius: 48% 52% 45% 55%; align-items: center; justify-content: center; font-size: 11px; filter: url(#crayon)">2</span>puisné</div>
+<div style="position: absolute; left: 212px; top: 222px; display: flex; align-items: center; gap: 6px; font-size: 12px"><span style="display: inline-flex; width: 22px; height: 22px; border: 2px solid #2E8B3E; border-radius: 55% 45% 50% 50%; align-items: center; justify-content: center; font-size: 11px; filter: url(#crayon)">3</span>small, weak · 1590s</div>
+<div style="position: absolute; left: 20px; top: 132px; width: 92px; text-align: right; font-size: 11px; line-height: 1.25">set small<br>IM Fell · 1500–1699</div>
+<div style="position: absolute; left: 20px; top: 260px; display: flex; align-items: center; gap: 6px; font-size: 12px"><span style="display: inline-flex; width: 22px; height: 22px; border: 2px solid #2E8B3E; border-radius: 45% 55% 52% 48%; align-items: center; justify-content: center; font-size: 11px; filter: url(#crayon)">4</span>twin: puisne</div>
+</div></div></div><div style="margin-top: 10px"><ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.45">
+<li style="display: flex; gap: 10px"><span style="flex: 0 0 auto; display: inline-flex; width: 22px; height: 22px; border: 2px solid #2E8B3E; border-radius: 52% 48% 55% 45%; align-items: center; justify-content: center; font-size: 12px; filter: url(#crayon)">1</span><span>From the 1570s, meaning inferior in rank, and earlier, as a noun, a junior pupil.</span></li>
+<li style="display: flex; gap: 10px"><span style="flex: 0 0 auto; display: inline-flex; width: 22px; height: 22px; border: 2px solid #2E8B3E; border-radius: 48% 52% 45% 55%; align-items: center; justify-content: center; font-size: 12px; filter: url(#crayon)">2</span><span>From Old French <i>puisné</i>, "born later, younger, youngest," the opposite of <i>aisné</i>, first-born.</span></li>
+<li style="display: flex; gap: 10px"><span style="flex: 0 0 auto; display: inline-flex; width: 22px; height: 22px; border: 2px solid #2E8B3E; border-radius: 55% 45% 50% 50%; align-items: center; justify-content: center; font-size: 12px; filter: url(#crayon)">3</span><span>The sense "small, weak" comes in the 1590s.</span></li>
+<li style="display: flex; gap: 10px"><span style="flex: 0 0 auto; display: inline-flex; width: 22px; height: 22px; border: 2px solid #2E8B3E; border-radius: 45% 55% 52% 48%; align-items: center; justify-content: center; font-size: 12px; filter: url(#crayon)">4</span><span>His twin <i>puisne</i> came to mean a junior judge.</span></li>
+</ol>
+<a href="https://www.etymonline.com/word/puny" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 13px">Source: Etymonline ↗</a>
+</div></div><div style="padding-top: 26px; position: relative"><div style="position: relative"><p style="margin: 0; font-family: 'Reenie Beanie', cursive; font-size: 34px; line-height: 1; color: #6E6E6E; filter: url(#pencil)">Literally "born later." Has been seated at the wrong table his whole life and now knows everybody's secrets.</p>
+<svg aria-hidden="true" width="150" height="44" viewBox="0 0 150 44" style="position: absolute; left: 80px; top: -7px; overflow: visible; filter: url(#crayon)" fill="none" stroke="#D23A2A" stroke-width="2.4" stroke-linecap="round"><path d="M14 24 C10 6 90 2 130 10 C152 16 140 42 76 41 C30 40 6 32 16 16"></path></svg>
+</div><div style="margin-top: 40px"><div style="position: relative; width: 350px; height: 200px"><div style="position: absolute; left: 0; top: 0; width: 350px; height: 200px; transform: scale(1.0); transform-origin: 0 0"><div style="position: relative; margin-top: 4px">
+<div style="padding: 14px 18px 12px; background-color: #FFFEF9; background-image: repeating-linear-gradient(to bottom, transparent 0 20px, rgba(42,111,219,0.22) 20px 21px); background-position: 0 12px; box-shadow: 0 6px 8px -5px rgba(40,30,10,0.35); transform: rotate(-1.5deg)">
+<p style="margin: 0; font-family: 'Reenie Beanie', cursive; font-size: 21px; line-height: 1; color: #6E6E6E; filter: url(#pencil)">"Everyone's watching King. Nobody's watching Kindred. The <i>kin</i> in her name is Old English <i>cynn</i>, and that goes straight back to the old man in the portrait. Nobody tells <i>me</i> anything, so I listen."</p>
+</div>
+<svg aria-hidden="true" width="12" height="34" viewBox="0 0 12 34" style="position: absolute; left: 34px; top: -20px; transform: rotate(-8deg); overflow: visible" fill="none" stroke-linecap="round" stroke-linejoin="round"><g stroke="#23306E" stroke-width="1.3" style="filter: url(#wobble)"><path d="M1 3.4 C1.2 2 11 2 11.2 3.2 C11.4 5 1 5.4 1 3.4"></path><path d="M1.2 4 L1.4 5.6 C3 7 9 7 10.8 5.6 L11 4"></path><path d="M4.8 6.8 L5.6 30.4 L6.2 33 L6.8 30.4 L7.4 6.8"></path><path d="M5.2 12 l2 -1 M5.3 17 l2 -1 M5.4 22 l2 -1"></path></g></svg>
+<svg aria-hidden="true" width="20" height="30" viewBox="0 0 18 28" style="position: absolute; right: 6px; top: -16px; filter: url(#crayon)" fill="none" stroke="#E8792B" stroke-width="2.6" stroke-linecap="round"><path d="M3 9 C3 2 15 1 15 8 C15 13 9 13 9 19 M9 25 v0.5"></path></svg>
+</div>
+</div></div></div><div data-dc-group="" style="box-sizing: border-box"><div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-top: 0; position: relative"><div style="position: absolute; left: 165px; top: -11px; width: 342px; height: 330px; transform: scale(0.95); transform-origin: 0 0"><svg aria-hidden="true" width="342" height="330" viewBox="0 0 342 330" style="position: absolute; left: -120px; top: 10px; overflow: visible" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#23306E" stroke-width="1.4" style="filter: url(#wobble)">
+<path d="M66 148 C96 124 136 112 174 106"></path>
+<path d="M76 158 C140 150 200 152 248 160"></path>
+</g>
+<path d="M60 186 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0" transform="rotate(20 60 186)" stroke="#2A6FDB" stroke-width="2.4" style="filter: url(#crayon)"></path>
+</svg>
+
+<span aria-current="page" style="position: absolute; left: -116px; top: 146px; padding: 7px 11px 5px; background: linear-gradient(to bottom, #E9E2D3 0%, #EFE9DD 32%, #FFFDF8 35%, #FAF6EE 100%); box-shadow: 0 10px 12px -6px rgba(40,30,10,0.45); line-height: 1; color: #141414; transform: rotate(-4deg); font-family: 'IM Fell English', serif; font-size: 20px">puny<svg aria-hidden="true" width="56" height="10" viewBox="0 0 56 10" style="position: absolute; left: 6px; bottom: -11px; filter: url(#crayon)" fill="none" stroke="#D23A2A" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M1 7l5-5 5 5 5-5 5 5 5-5 5 5 5-5 5 5 5-5 5 5"></path></svg></span>
+
+<a href="Word.html" style="position: absolute; left: 52px; top: 102px; padding: 6px 10px 4px; background: linear-gradient(to bottom, #E9E2D3 0%, #EFE9DD 32%, #FFFDF8 35%, #FAF6EE 100%); box-shadow: 0 5px 6px -4px rgba(40,30,10,0.45); line-height: 1; text-decoration: none; color: #141414; transform: rotate(4deg); font-family: 'EB Garamond', serif; font-size: 22px">nature</a>
+<a href="Word.html" style="position: absolute; left: 132px; top: 158px; padding: 6px 9px 4px; background: linear-gradient(to bottom, #E9E2D3 0%, #EFE9DD 32%, #FFFDF8 35%, #FAF6EE 100%); box-shadow: 0 5px 6px -4px rgba(40,30,10,0.45); line-height: 1; text-decoration: none; color: #141414; transform: rotate(-5deg); font-family: 'IM Fell English', serif; font-style: italic; font-size: 17px">naive</a>
+
+
+<a href="Word.html" style="position: absolute; left: 62px; top: 234px; padding: 6px 9px 4px; background: linear-gradient(to bottom, #E9E2D3 0%, #EFE9DD 32%, #FFFDF8 35%, #FAF6EE 100%); box-shadow: 0 5px 6px -4px rgba(40,30,10,0.45); line-height: 1; text-decoration: none; color: #141414; transform: rotate(3deg); font-family: 'Bodoni Moda', serif; font-size: 11px; text-transform: uppercase; letter-spacing: 0.16em">wunderkind</a>
+<p style="position: absolute; left: 194px; top: 229px; width: 249px; margin: 0; font-family: 'Reenie Beanie', cursive; color: #6E6E6E; filter: url(#pencil); line-height: 0.95; font-size: 23px">no blood, just gossip. fellow youngest; they don't get along.</p>
+
+</div></div><a href="Table.html" style="position: absolute; left: 347px; top: 584px; display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; color: #141414">sits at the kids' table →</a></div><p style="position: absolute; left: -4px; top: 357px; width: 629px; margin: 0; font-family: 'Reenie Beanie', cursive; color: #6E6E6E; filter: url(#pencil); line-height: 0.95; font-size: 23px">blood relatives. all three have <i>natus</i>, "born," inside them. In <i>puis-né</i> it's the <i>né</i>.</p></div></div>
+<div style="position: absolute; left: 0; right: 0; bottom: 61px; display: flex; justify-content: center; gap: 12px"><a href="Table.html" style="display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 20px; white-space: nowrap; background: #141414; color: #FBF9F4; border-radius: 999px; font-size: 15px; font-weight: 600; text-decoration: none">Back to the table</a><a href="Main.html" style="display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 20px; white-space: nowrap; border: 1.6px solid #141414; border-radius: 999px; font-size: 15px; text-decoration: none">Reunion hall</a></div>
+</div>
+</x-dc>
+
+</body>
+</html>
