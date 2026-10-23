@@ -1,0 +1,24 @@
+{
+  "slug": "nature",
+  "word": "nature",
+  "table": "old-money",
+  "role": "guest",
+  "route": "Old French",
+  "firstUse": "late 1200s",
+  "eraBand": "1200-1499",
+  "recordText": "From the late 1200s, via Old French. Its first English sense was the body's powers of growth and repair. Latin *natura* literally means \"birth.\"",
+  "gossipText": "Literally named \"birth.\" Has attended every christening in the family and remembers all of them.",
+  "testimony": "I was there for every birth at this table. Gingerly's? No record. No one even knows which language he was born in.",
+  "clue": null,
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "both from Latin \"born\"", "slug": "naive" },
+    { "type": "gossip", "label": "they talk shop", "slug": "pregnant" },
+    { "type": "across-the-room", "label": "at Back with an accent", "slug": "naive" }
+  ],
+  "object": "A sprig of leaves",
+  "sources": [
+    { "label": "Etymonline: nature", "url": "https://www.etymonline.com/word/nature" }
+  ],
+  "status": "checked"
+}

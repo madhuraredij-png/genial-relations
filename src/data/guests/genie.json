@@ -1,0 +1,29 @@
+{
+  "slug": "genie",
+  "word": "genie",
+  "table": "floaters",
+  "role": "floater",
+  "route": "French",
+  "firstUse": "1650s",
+  "eraBand": "1500-1699",
+  "recordText": "From the 1650s, meaning a guardian spirit, from French *génie*, from Latin *genius*. A French translation of the *Arabian Nights* used it for the Arabic *jinni*, which it happened to resemble; English picked up that sense by 1748.",
+  "gossipText": "Genius's little brother, who found a better costume and never took it off.",
+  "testimony": "I am family. Latin, like my brother. The lamp was a translator's idea; the words just sounded alike. Is it a crime to commit to a role?",
+  "clue": { "kind": "colour" },
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "brother", "slug": "genius" },
+    { "type": "gossip", "label": "the costume club", "slug": "jaunty" },
+    { "type": "gossip", "label": "the costume club", "slug": "kriss-kringle" }
+  ],
+  "object": "A lamp with a curl of smoke",
+  "sources": [
+    { "label": "Etymonline: genius / genie / genial", "url": "https://www.etymonline.com/search?q=genius" }
+  ],
+  "status": "checked",
+  "cameoLines": [
+    "A puff of smoke. Someone says 'bless you.' Genie says 'thank you, I'll take that as a wish.'",
+    "Genie drifts past, humming something in Latin."
+  ],
+  "seenAt": ["back-with-an-accent", "academics"]
+}

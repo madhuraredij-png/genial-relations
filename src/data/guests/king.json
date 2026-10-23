@@ -1,0 +1,29 @@
+{
+  "slug": "king",
+  "word": "king",
+  "table": "head-table",
+  "role": "guest",
+  "route": "Old English",
+  "firstUse": "late Old English",
+  "eraBand": "old-english",
+  "recordText": "A late Old English contraction of *cyning*. It may come from *cynn* (\"leader of the people\") or from a related Germanic word for noble birth. The Century Dictionary calls the link to *kin* undetermined but hardly to be doubted.",
+  "gossipText": "Has quoted the Century Dictionary at every reunion since it was published. Brings his own chair.",
+  "testimony": "Hardly to be doubted. That's what the dictionary says. I had it framed. Ignore the part above it, where it says undetermined.",
+  "clue": {
+    "kind": "step",
+    "stepNumber": 1,
+    "locatedIn": "record",
+    "summary": "King ← Old English cyning"
+  },
+  "suspect": true,
+  "links": [
+    { "type": "blood", "label": "probably", "slug": "kindred" },
+    { "type": "gossip", "label": "two men who both expect a throne", "slug": "kriss-kringle" },
+    { "type": "across-the-room", "label": "at the kids' table", "slug": "kriss-kringle" }
+  ],
+  "object": "A crown, sitting on a chair",
+  "sources": [
+    { "label": "Etymonline: king", "url": "https://www.etymonline.com/word/king" }
+  ],
+  "status": "checked"
+}

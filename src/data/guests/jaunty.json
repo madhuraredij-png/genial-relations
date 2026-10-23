@@ -1,0 +1,25 @@
+{
+  "slug": "jaunty",
+  "word": "jaunty",
+  "table": "back-with-an-accent",
+  "role": "guest",
+  "route": "French",
+  "firstUse": "1660s",
+  "eraBand": "1500-1699",
+  "recordText": "From the 1660s, meaning elegant, stylish. It was an imperfect, perhaps joking attempt to say French *gentil* the way the French did. By the 1670s it also meant easy and sprightly.",
+  "gossipText": "The third version of Gentle, and the only one having fun. Owes his whole existence to an accent.",
+  "testimony": "Then a French translator cast him as the jinni in the Arabian Nights, because the two words happened to sound alike. Pure accident. He kept the costume.",
+  "clue": null,
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "", "slug": "gentle" },
+    { "type": "blood", "label": "", "slug": "genteel" },
+    { "type": "gossip", "label": "two guests in costume", "slug": "kriss-kringle" },
+    { "type": "across-the-room", "label": "at the kids' table", "slug": "kriss-kringle" }
+  ],
+  "object": "A hat, tilted",
+  "sources": [
+    { "label": "Etymonline: jaunty", "url": "https://www.etymonline.com/word/jaunty" }
+  ],
+  "status": "checked"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "gentle",
+  "word": "gentle",
+  "table": "old-money",
+  "role": "guest",
+  "route": "Old French",
+  "firstUse": "early 1200s",
+  "eraBand": "1200-1499",
+  "recordText": "In English from the early 1200s, meaning well-born, of a noble family. From Old French *gentil* and Latin *gentilis*, \"of the same family or clan.\" The old sense survives in *gentleman*.",
+  "gossipText": "The family's social secretary. She has been borrowed back from French twice since she arrived, and she is not pleased about how either one turned out.",
+  "testimony": "They say his name was never about family. It's about breeding: some old Germanic word for noble birth. Finally, a relative with standards.",
+  "clue": {
+    "kind": "rumour",
+    "stepNumber": 5,
+    "isDecoy": false,
+    "summary": "Rival story: from a Germanic word meaning \"noble birth\"",
+    "confirmedBy": "king"
+  },
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "the same word, borrowed again", "slug": "genteel" },
+    { "type": "blood", "label": "the same word, borrowed again", "slug": "jaunty" },
+    { "type": "gossip", "label": "\"clan\" is her word too", "slug": "kindred" },
+    { "type": "across-the-room", "label": "at Back with an accent", "slug": "genteel" }
+  ],
+  "object": "A pair of gloves",
+  "sources": [
+    { "label": "Etymonline: gentle", "url": "https://www.etymonline.com/word/gentle" }
+  ],
+  "status": "to-check",
+  "notes": ["DRAFT: step-5 testimony awaiting review"]
+}

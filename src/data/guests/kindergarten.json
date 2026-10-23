@@ -1,0 +1,32 @@
+{
+  "slug": "kindergarten",
+  "word": "kindergarten",
+  "table": "kids-table",
+  "role": "guest",
+  "route": "German",
+  "firstUse": "1852",
+  "eraBand": "1800-1899",
+  "recordText": "In English from 1852, from German *Kinder-Garten* (1840), \"children's garden,\" a name coined by the educator Friedrich Fröbel.",
+  "gossipText": "The self-appointed teacher, even though Kriss Kringle got here 22 years before her. Runs the table like a classroom.",
+  "testimony": "Kringle, King. Both start with K, both expect presents. He's royalty, obviously.",
+  "clue": {
+    "kind": "rumour",
+    "isDecoy": true,
+    "summary": "Kriss Kringle is royalty",
+    "flipText": "Only sounds alike: Kringle is German Christkind'l, little Christ child.",
+    "flipSourceUrl": "https://www.etymonline.com/word/Kriss%20Kringle"
+  },
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "her German Kind is related to kin and kind", "slug": "kind" },
+    { "type": "blood", "label": "", "slug": "wunderkind" },
+    { "type": "gossip", "label": "both run study groups", "slug": "genius" },
+    { "type": "across-the-room", "label": "at the head table", "slug": "kind" }
+  ],
+  "object": "A stick of chalk",
+  "sources": [
+    { "label": "Etymonline: kindergarten", "url": "https://www.etymonline.com/word/kindergarten" }
+  ],
+  "status": "to-check",
+  "notes": ["DRAFT: decoy testimony awaiting review"]
+}

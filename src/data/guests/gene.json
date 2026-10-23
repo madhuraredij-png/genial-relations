@@ -1,0 +1,31 @@
+{
+  "slug": "gene",
+  "word": "gene",
+  "table": "kids-table",
+  "role": "guest",
+  "route": "German (from Greek)",
+  "firstUse": "1911",
+  "eraBand": "1900-onward",
+  "recordText": "In English from 1911, from German *Gen*, coined in 1905 by the Danish scientist Wilhelm Johannsen, from Greek *genea*, \"generation, race,\" from *gene-. *Kin* comes from the same ancestor: one line spells it with k, the other with g.",
+  "gossipText": "The youngest guest at the reunion and the most certain about everything. Thinks he invented the family.",
+  "testimony": "He first shows up in English in 1830. That makes him younger than nearly everyone here, and older than me. I checked.",
+  "clue": {
+    "kind": "step",
+    "stepNumber": 6,
+    "locatedIn": "record",
+    "summary": "kin and gene share one ancestor: one line spells it with k, the other with g"
+  },
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "Greek and Latin cousins", "slug": "genius" },
+    { "type": "blood", "label": "Greek and Latin cousins", "slug": "genial" },
+    { "type": "gossip", "label": "two technical types", "slug": "engine" },
+    { "type": "across-the-room", "label": "at Old money", "slug": "engine" }
+  ],
+  "object": "A crayon",
+  "sources": [
+    { "label": "Etymonline: gene", "url": "https://www.etymonline.com/word/gene" }
+  ],
+  "status": "checked",
+  "notes": ["Gene's testimony says he 'first shows up in English in 1830', but the fact-check table gives his first use as 1911 — a discrepancy inside the drafted copy itself, kept verbatim and flagged rather than fixed (testimony text isn't mine to edit)"]
+}

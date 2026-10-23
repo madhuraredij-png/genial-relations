@@ -1,0 +1,39 @@
+{
+  "slug": "back-with-an-accent",
+  "name": "Back with an accent",
+  "route": "Later French (1500s on)",
+  "event": "The costume parade",
+  "guests": ["genteel", "jaunty", "generous", "naive", "puny"],
+  "setupLines": [
+    "Genteel and Jaunty arrive in matching outfits. Gentle, two tables away, pretends not to see.",
+    "\"Before we judge costumes,\" says Generous, \"everyone looks wonderful.\" Nobody believes Generous.",
+    "A puff of smoke drifts past the table. Several guests cough pointedly."
+  ],
+  "pointerLines": {
+    "genteel": [
+      "Genteel knew him in France. Ask her, politely.",
+      "Genteel has opinions about his costume. Only in mockery, of course.",
+      "Ask Genteel. She's been dying to."
+    ],
+    "jaunty": [
+      "Jaunty knows exactly where that costume came from.",
+      "Ask Jaunty. He'll do the accent.",
+      "Jaunty was there when the costume first went on."
+    ],
+    "generous": [
+      "Generous has been covering for him for centuries. Ask how long.",
+      "Ask Generous. She'll say nothing unkind, which tells you plenty.",
+      "Generous knows the date. Generous always knows the date."
+    ],
+    "naive": [
+      "Naive believes the lamp story. Ask her what doesn't add up.",
+      "Ask Naive. She noticed something without meaning to.",
+      "Naive asked him a question. He didn't answer it."
+    ],
+    "puny": [
+      "Nobody tells Puny anything, so Puny listens. Ask him.",
+      "Puny overheard something at the academics' table.",
+      "Ask Puny. He's furious about it, whatever it is."
+    ]
+  }
+}

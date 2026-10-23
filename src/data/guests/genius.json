@@ -1,0 +1,31 @@
+{
+  "slug": "genius",
+  "word": "genius",
+  "table": "academics",
+  "role": "guest",
+  "route": "Latin",
+  "firstUse": "late 1300s",
+  "eraBand": "1200-1499",
+  "recordText": "From the late 1300s, first a guardian or moral spirit that guides a person through life. Latin *genius* was the spirit watching over each person from birth, originally \"generative power\" or \"inborn nature.\"",
+  "gossipText": "Was a guardian spirit before he was a compliment. Still hovers over people when they work.",
+  "testimony": "Obviously he's Latin rex. Rex, king. Same title, same family. I don't need to check.",
+  "clue": {
+    "kind": "rumour",
+    "isDecoy": true,
+    "summary": "King is Latin rex",
+    "flipText": "Only means the same: rex comes from *reg-, \"move in a straight line\", not *gene-.",
+    "flipSourceUrl": "https://www.etymonline.com/word/rex"
+  },
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "\"my little brother; we don't discuss it\"", "slug": "genie" },
+    { "type": "gossip", "label": "rivals", "slug": "ingenious" },
+    { "type": "across-the-room", "label": "wherever he's floating", "slug": "genie" }
+  ],
+  "object": "A lit candle (the guardian keeping watch)",
+  "sources": [
+    { "label": "Etymonline: genius", "url": "https://www.etymonline.com/word/genius" }
+  ],
+  "status": "to-check",
+  "notes": ["DRAFT: decoy testimony awaiting review"]
+}

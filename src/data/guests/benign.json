@@ -1,0 +1,24 @@
+{
+  "slug": "benign",
+  "word": "benign",
+  "table": "old-money",
+  "role": "guest",
+  "route": "Old French",
+  "firstUse": "early 1300s",
+  "eraBand": "1200-1499",
+  "recordText": "From the early 1300s, via Old French. Latin *benignus*, kindly, is literally \"well born.\"",
+  "gossipText": "The good twin. Has been called \"kind\" so often that Kind has started to take it personally.",
+  "testimony": "He was elegant once, back in the 1510s. By about 1600 he was tiptoeing everywhere. Something happened in between, and nobody will tell me what.",
+  "clue": null,
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "twin", "slug": "malign" },
+    { "type": "gossip", "label": "", "slug": "kind" },
+    { "type": "across-the-room", "label": "at Back with an accent — \"another one born noble and now just nice\"", "slug": "generous" }
+  ],
+  "object": "A bread roll",
+  "sources": [
+    { "label": "Etymonline: benign", "url": "https://www.etymonline.com/word/benign" }
+  ],
+  "status": "checked"
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "kindred",
+  "word": "kindred",
+  "table": "head-table",
+  "role": "host",
+  "route": "kin + -red, perhaps late Old English kinraden",
+  "firstUse": "about 1200",
+  "eraBand": "1200-1499",
+  "recordText": "From *kin* + *-red*, first recorded around 1200, perhaps from a late Old English *kinraden*. The first *d* doesn't belong: it crept in during the 1600s, probably because it's easier to say, perhaps helped along by *kind*. The *kin* in it is Old English *cynn*, family, from *gene-.",
+  "gossipText": "The family historian. Picked up an extra *d* in the 1600s and will not discuss it.",
+  "testimony": "There are two stories about him. In one, a king is the leader of the people, meaning our people. In the other, he's from a word for noble birth, a different line entirely. I wrote both down. I underlined neither.",
+  "clue": null,
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "sibling", "slug": "kind" },
+    { "type": "blood", "label": "claims to be her brother", "slug": "king" },
+    { "type": "gossip", "label": "they compare notes on what counts as \"family\"", "slug": "gentle" },
+    { "type": "across-the-room", "label": "at Old money", "slug": "gentle" }
+  ],
+  "object": "The guest list, one name underlined twice",
+  "sources": [
+    { "label": "Etymonline: kindred", "url": "https://www.etymonline.com/word/kindred" }
+  ],
+  "status": "to-check",
+  "notes": ["DRAFT, replaces the kin gossip: yours to rewrite"]
+}

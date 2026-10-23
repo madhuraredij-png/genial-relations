@@ -1,0 +1,26 @@
+{
+  "slug": "kriss-kringle",
+  "word": "Kriss Kringle",
+  "table": "kids-table",
+  "role": "guest",
+  "route": "German",
+  "firstUse": "1830",
+  "eraBand": "1800-1899",
+  "recordText": "First recorded in 1830 as *Christ-kinkle*, in a Pennsylvania German setting, from German *Christkindlein*, \"Christ child.\" The second part is a diminutive of *Kind*, child. Etymonline notes the name properly refers to the Christ child, not Santa Claus.",
+  "gossipText": "Arrived in a borrowed red suit and has been mistaken for someone else ever since. Too polite to correct anyone.",
+  "testimony": "Fine. The suit is borrowed. But my name is family: the end of it is German for 'little child.' Ask anyone at this table.",
+  "clue": { "kind": "colour" },
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "all Kind", "slug": "kindergarten" },
+    { "type": "blood", "label": "all Kind", "slug": "wunderkind" },
+    { "type": "gossip", "label": "both expected a throne", "slug": "king" },
+    { "type": "gossip", "label": "both in costume", "slug": "jaunty" },
+    { "type": "across-the-room", "label": "at the head table", "slug": "king" }
+  ],
+  "object": "A false beard",
+  "sources": [
+    { "label": "Etymonline: Kriss Kringle", "url": "https://www.etymonline.com/word/Kriss%20Kringle" }
+  ],
+  "status": "checked"
+}

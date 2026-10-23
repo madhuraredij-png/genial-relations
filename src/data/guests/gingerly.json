@@ -1,0 +1,29 @@
+{
+  "slug": "gingerly",
+  "word": "gingerly",
+  "table": "floaters",
+  "role": "floater",
+  "route": "Unknown",
+  "firstUse": "1510s",
+  "eraBand": "1500-1699",
+  "recordText": "From the 1510s, meaning elegantly, daintily; from about 1600, extremely cautiously. Origin unknown. The OED suggests, as a perhaps, Old French *gensor*, \"more dainty,\" which traces back to the same Latin as *gentle*.",
+  "gossipText": "Arrived elegant and became careful. Nobody knows what happened in between, least of all Gingerly.",
+  "testimony": "Origin unknown. I know. Please stop looking at me. I was elegant once. Then I got careful. That's not a crime. Is it?",
+  "clue": { "kind": "colour" },
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "perhaps", "slug": "gentle" },
+    { "type": "gossip", "label": "she remembers him before", "slug": "benign" },
+    { "type": "gossip", "label": "she wants his birth certificate", "slug": "nature" }
+  ],
+  "object": "Tiptoe footprints",
+  "sources": [
+    { "label": "Etymonline: gingerly", "url": "https://www.etymonline.com/word/gingerly" }
+  ],
+  "status": "checked",
+  "cameoLines": [
+    "Someone tiptoes past. Very elegantly. Very carefully.",
+    "Gingerly picks up a fork as if it might go off."
+  ],
+  "seenAt": ["old-money", "head-table"]
+}

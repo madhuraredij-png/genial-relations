@@ -1,0 +1,31 @@
+{
+  "slug": "ingenuous",
+  "word": "ingenuous",
+  "table": "academics",
+  "role": "guest",
+  "route": "Latin",
+  "firstUse": "1590s",
+  "eraBand": "1500-1699",
+  "recordText": "From the 1590s, meaning noble-minded and straightforward. Latin *ingenuus* first meant native or freeborn, literally \"born in.\" The sense \"artless, innocent\" arrives in the 1670s. In the 1600s it was confused with *ingenious* so often that even Shakespeare mixed them up.",
+  "gossipText": "The innocent one. Has never once noticed she's in the wrong seat.",
+  "testimony": "King told me the family list calls him possibly ours. Possibly is practically yes! Isn't it? Is it?",
+  "clue": {
+    "kind": "rumour",
+    "stepNumber": 3,
+    "isDecoy": false,
+    "summary": "kuningaz is possibly related to cynn, \"family\" (the doubtful link)",
+    "confirmedBy": "king"
+  },
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "same root", "slug": "ingenious" },
+    { "type": "gossip", "label": "best friends; they believe each other", "slug": "naive" },
+    { "type": "across-the-room", "label": "at Back with an accent", "slug": "naive" }
+  ],
+  "object": "A place card with someone else's name on it",
+  "sources": [
+    { "label": "Etymonline: Ingenuous", "url": "https://www.etymonline.com/word/Ingenuous" }
+  ],
+  "status": "to-check",
+  "notes": ["DRAFT: step-3 testimony awaiting review"]
+}

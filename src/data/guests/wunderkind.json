@@ -1,0 +1,30 @@
+{
+  "slug": "wunderkind",
+  "word": "wunderkind",
+  "table": "kids-table",
+  "role": "guest",
+  "route": "German",
+  "firstUse": "1883",
+  "eraBand": "1800-1899",
+  "recordText": "In English from 1883: a child prodigy, especially in music. From German *Wunderkind*, \"wonder-child.\" The *wonder* half goes back to Old English *wundor*, a word of unknown origin.",
+  "gossipText": "The prodigy. Half of her name is family; the other half has no known origin. She doesn't like to discuss it.",
+  "testimony": "In German he's König. In Dutch, koning. Every one of them goes back to the same Germanic grandfather, kuningaz. I made a chart.",
+  "clue": {
+    "kind": "step",
+    "stepNumber": 2,
+    "locatedIn": "testimony",
+    "summary": "cyning ← Proto-Germanic kuningaz; cousins German König, Dutch koning"
+  },
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "", "slug": "kindergarten" },
+    { "type": "blood", "label": "", "slug": "kriss-kringle" },
+    { "type": "gossip", "label": "rival youngest children", "slug": "puny" },
+    { "type": "across-the-room", "label": "at Back with an accent", "slug": "puny" }
+  ],
+  "object": "A metronome",
+  "sources": [
+    { "label": "Etymonline: wunderkind", "url": "https://www.etymonline.com/word/wunderkind" }
+  ],
+  "status": "checked"
+}

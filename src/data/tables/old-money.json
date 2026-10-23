@@ -1,0 +1,39 @@
+{
+  "slug": "old-money",
+  "name": "Old money",
+  "route": "Old French",
+  "event": "The twins' feud",
+  "guests": ["gentle", "benign", "malign", "nature", "engine"],
+  "setupLines": [
+    "Benign passes the bread. Malign passes judgement.",
+    "\"Lovely to see everyone,\" says Gentle, to the four people she's sure about.",
+    "Someone has been creeping past this table all evening, very, very carefully."
+  ],
+  "pointerLines": {
+    "gentle": [
+      "Gentle says he's no cousin of hers. Ask her how she knows.",
+      "Gentle keeps the family tree. She's crossed one name out in pencil.",
+      "Gentle has been very gentle about it. Ask her anyway."
+    ],
+    "benign": [
+      "Benign noticed something. Benign notices everything, kindly.",
+      "Ask Benign. She remembers him before he got so careful.",
+      "Benign won't gossip. Ask her twice."
+    ],
+    "malign": [
+      "Malign has a theory. Malign always has a theory.",
+      "Ask Malign. You'll regret it, but ask.",
+      "Malign has written one word on his napkin and underlined it."
+    ],
+    "nature": [
+      "Nature has seen every birth at this reunion except one.",
+      "Ask Nature. She's very old and very blunt.",
+      "Nature is asking for birth certificates. One guest left the room."
+    ],
+    "engine": [
+      "Engine has worked out how he got here. Probably.",
+      "Ask Engine. He's been drawing diagrams on the tablecloth.",
+      "Engine says the parts fit. Engine says that about everything."
+    ]
+  }
+}

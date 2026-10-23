@@ -1,0 +1,24 @@
+{
+  "slug": "naive",
+  "word": "naive",
+  "table": "back-with-an-accent",
+  "role": "guest",
+  "route": "French",
+  "firstUse": "1650s",
+  "eraBand": "1500-1699",
+  "recordText": "From the 1650s, meaning natural, simple, artless. From French *naïve*, and before that Old French *naif*, which could mean genuine, just born, or foolish. Latin *nativus*, \"born, native.\" Dryden used it in a 1673 comedy as one of the French words a character shows off with.",
+  "gossipText": "Arrived as a fashionable French word and still thinks that's what she is.",
+  "testimony": "Wait, he's not from a lamp? He did say his real name was Latin. Isn't that… Genius's name?",
+  "clue": null,
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "both from Latin \"born\"", "slug": "nature" },
+    { "type": "gossip", "label": "best friends", "slug": "ingenuous" },
+    { "type": "across-the-room", "label": "at the academics", "slug": "genius" }
+  ],
+  "object": "A French phrasebook",
+  "sources": [
+    { "label": "Etymonline: naive", "url": "https://www.etymonline.com/word/naive" }
+  ],
+  "status": "checked"
+}
