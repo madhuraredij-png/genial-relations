@@ -1,5 +1,5 @@
 import {
-  jacquard24,
+  uncialAntiqua,
   ebGaramond,
   imFellEnglish,
   bodoniModa,
@@ -10,7 +10,7 @@ import {
 import styles from "./page.module.css";
 
 const eraSamples = [
-  { font: jacquard24, family: "Jacquard 24", band: "Old English" },
+  { font: uncialAntiqua, family: "Uncial Antiqua", band: "Old English" },
   { font: ebGaramond, family: "EB Garamond", band: "1200–1499" },
   { font: imFellEnglish, family: "IM Fell English", band: "1500–1699" },
   { font: bodoniModa, family: "Bodoni Moda", band: "1800–1899" },

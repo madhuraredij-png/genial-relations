@@ -21,6 +21,11 @@ export const GuestSchema = z.object({
   // both "grand" and "contested"). Only 6 of 25 guests have a documented
   // assignment anywhere in the docs; left empty for the rest — see BACKLOG.md.
   typeTags: z.array(TypeTagSchema).optional(),
+  // Numbered-callout facts for the name-zone treatment (CLAUDE.md: circle =
+  // "record fact, numbered callout"). Verbatim-derived short phrases pulled
+  // from recordText/route/firstUse, NOT the narrower spec.md "senses" field
+  // (meanings-over-time only) — deferred separately, see BACKLOG.md.
+  recordFacts: z.array(z.string()).optional(),
   sources: z.array(SourceSchema).min(1),
   status: z.enum(["checked", "to-check"]),
   notes: z.array(z.string()).optional(), // bracketed editor notes; never rendered as copy

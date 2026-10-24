@@ -58,7 +58,7 @@ The docs were updated on 2026-10-23 for the decisions below, but they may still 
 
 **Typography**
 - Layer 1, era bands from `first_use` (a guest's name only):
-  - Old English → Jacquard 24
+  - Old English → Uncial Antiqua (changed from Jacquard 24, 2026-10-23: Jacquard 24's cross-stitch/pixel letterforms read as a rendering bug rather than a deliberate style once seen on the king prototype; Uncial Antiqua's insular-majuscule letterforms are closer to actual Anglo-Saxon manuscript lettering)
   - 1200–1499 → EB Garamond (placeholder; may change)
   - 1500–1699 → IM Fell English
   - 1800–1899 → Bodoni Moda
