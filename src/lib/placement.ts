@@ -21,10 +21,10 @@ export interface CalloutSlot extends Placement {
   maxWidth: number;
 }
 
-// Candidate slots inside the 342x560 relatives zone (phone coordinate space),
+// Candidate slots inside the 366x580 relatives zone (phone coordinate space),
 // a single column sitting to the right of the current-page self-tag (left:
-// 4, top: 220, vertically centered on the left edge — see .currentTag in
-// page.module.css, anchor y=236 in CURRENT_TAG_ANCHOR below). Earlier two-
+// 4, top: 230, vertically centered on the left edge — see .currentTag in
+// page.module.css, anchor y=246 in CURRENT_TAG_ANCHOR below). Earlier two-
 // column layouts put a card almost directly above the self-tag, which forced
 // the connector line into a steep upward arc that cut straight through the
 // caption sitting in that same column. Keeping every slot at the same x
@@ -32,26 +32,43 @@ export interface CalloutSlot extends Placement {
 // right-hand side instead means each connector line travels mostly
 // sideways, not up through a caption.
 //
-// Row spacing (190px) is sized for the tallest real card+caption+pointer
-// group in the data (card ~32px + gap + a 3-line wrapped caption at this
-// maxWidth + gap + a 44px pointer link, worst case kindred→gentle: "they
-// compare notes on what counts as \"family\"" plus its across-the-room
-// pointer, ~176px tall) — a guest with a shorter caption just leaves more
-// air between its cards. An earlier version packed a 4th "overflow column"
-// slot beside slot index 1 to fit a rare 4-link guest (kriss-kringle); that
-// slot's horizontal offset wasn't wide enough to clear slot 1's own
-// maxWidth, so the two cards overlapped. Rather than guess at a width that
-// works for every future 4-link guest, placeRelative only ever returns one
-// of these 3 slots — a 4th+ relative link has no card at all and falls back
-// to a plain pointer-style link (see the word page's overflowRelativeLinks),
-// the same treatment already used for across-the-room links with no card.
-// Exported (not just used internally) so /dev/layout-editor can read the
-// real current numbers instead of a hand-copied duplicate that could drift
-// out of sync with this file.
+// Widened per slot (170 -> 190-230, more room where the slot's own left
+// position allows it) and the zone widened 342 -> 366 (Madhura: "wider and
+// less tall"). The "less tall" half turned out to have real limits: a
+// row's height is set by its tallest actual card+caption+pointer group, and
+// at this width that's ~150px for every guest in the data (checked by
+// rendering all 25, not computed) -- a bit shorter than the original ~190px
+// row spacing, but not dramatically so, because a 3-part group (card +
+// wrapped caption + a 44px pointer link) just needs that much room
+// regardless of width. So most guests (the ~14 with 1-2 relative links) are
+// genuinely and noticeably shorter than before; guests with all 3 slots
+// filled are only modestly shorter, not "less tall" in a big way, because
+// the worst-case group governs every row. Array order must stay
+// top-to-bottom (relativeCardsBottom below indexes by row count, so it
+// assumes RELATIVE_SLOTS[n].top is the nth row down) -- this flips back an
+// ordering drift from an earlier layout-editor save that put the "lower"
+// slot first and silently broke that assumption for guests with 1-2
+// relative links. A maxWidth of 2000 saved from that same session let a
+// card's box grow to fill whatever room was available (284px for one real
+// caption) rather than actually being unconstrained -- which broke the
+// 360px-viewport requirement no matter how far left the slot sat, since
+// more room just let it claim more width. Capped back to a real number
+// (230) for that reason, not reverted arbitrarily. An earlier version
+// packed a 4th "overflow column" slot beside slot index 1 to fit a rare
+// 4-link guest (kriss-kringle); that slot's horizontal offset wasn't wide
+// enough to clear slot 1's own maxWidth, so the two cards overlapped.
+// Rather than guess at a width that works for every future 4-link guest,
+// placeRelative only ever returns one of these 3 slots — a 4th+ relative
+// link has no card at all and falls back to a plain pointer-style link
+// (see the word page's overflowRelativeLinks), the same treatment already
+// used for across-the-room links with no card. Exported (not just used
+// internally) so /dev/layout-editor can read the real current numbers
+// instead of a hand-copied duplicate that could drift out of sync with
+// this file.
 export const RELATIVE_SLOTS: RelativeSlot[] = [
-  { left: 119.57, top: 395.72, rotate: 3, maxWidth: 2000 }, // lower
-  { left: 114.08, top: 86.7, rotate: -2, maxWidth: 170 }, // upper
-  { left: 200.95, top: 220.43, rotate: -3, maxWidth: 170 }, // level with self-tag
+  { left: 114.08, top: 60, rotate: -2, maxWidth: 225 }, // upper
+  { left: 162, top: 230, rotate: -3, maxWidth: 190 }, // level with self-tag
+  { left: 82, top: 400, rotate: 3, maxWidth: 230 }, // lower
 ];
 
 export const RELATIVE_SLOT_COUNT = RELATIVE_SLOTS.length;
@@ -66,9 +83,10 @@ export function placeRelative(guestSlug: string, index: number): RelativeSlot {
 // fallback-link count, not a fixed worst-case height for everyone — a guest
 // with 1-2 relative links (most of them) would otherwise leave a large dead
 // gap below, sized for kriss-kringle's 4-link worst case. 180 is the same
-// conservative per-row clearance baked into RELATIVE_SLOTS' 190px spacing
-// (card + wrapped caption + an optional pointer link); 14 is the gap before
-// the first fallback link, 40 the gap between stacked fallback links.
+// conservative per-row clearance that justifies RELATIVE_SLOTS' ~150-170px
+// row spacing above (card + wrapped caption + an optional pointer link, for
+// the tallest real group); 14 is the gap before the first fallback link, 40
+// the gap between stacked fallback links.
 export function relativeCardsBottom(cardCount: number): number {
   const rows = Math.min(cardCount, RELATIVE_SLOT_COUNT);
   return rows > 0 ? RELATIVE_SLOTS[rows - 1].top + 180 : 0;
@@ -146,11 +164,11 @@ export const PAPERCLIP_PATH = "M3 9 C3 2 15 1 15 8 C15 13 9.06 11.14 9 19 M9 25 
 export const CURRENT_TAG_ZIGZAG_PATH =
   "M1 7l5-5 5 5 5-5 5 5 5-5 5 5 5-5 5 5 5-5 5 5";
 
-// Center of the "current page" self-tag in the relatives zone's 342x560
+// Center of the "current page" self-tag in the relatives zone's 366x560
 // coordinate space, matching .currentTag in page.module.css (left: 4px,
-// top: 220px). Connector lines start here, one per actual relative link —
+// top: 230px). Connector lines start here, one per actual relative link —
 // never more, so there's no line pointing at nothing.
-const CURRENT_TAG_ANCHOR = { x: 37, y: 236 };
+const CURRENT_TAG_ANCHOR = { x: 37, y: 246 };
 
 export function connectorPath(cardLeft: number, cardTop: number): string {
   const x2 = cardLeft + 40;

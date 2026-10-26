@@ -239,7 +239,7 @@ export default async function WordPage({
             <div className={styles.relativesZone}>
               <svg
                 aria-hidden="true"
-                viewBox="0 0 342 330"
+                viewBox={`0 0 366 ${zoneHeight}`}
                 className={styles.relativesGuides}
                 fill="none"
                 strokeLinecap="round"

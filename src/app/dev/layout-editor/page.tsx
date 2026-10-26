@@ -718,7 +718,7 @@ export default function LayoutEditorPage() {
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Relative place-cards (RELATIVE_SLOTS)</h2>
         <p className={styles.sectionNote}>
-          342px-wide canvas (height grows to fit); matches the relatives zone&rsquo;s coordinate
+          366px-wide canvas (height grows to fit); matches the relatives zone&rsquo;s coordinate
           space on phone. {guest.word} is using {relativeCards.length} of{" "}
           {relativeSlots.length} slots
           {fallbackLinks.length > 0
@@ -728,10 +728,10 @@ export default function LayoutEditorPage() {
           page); the current-tag zigzag is edited separately, zoomed up, below.
         </p>
         <div className={styles.editorGrid}>
-          <div className={styles.canvas} style={{ width: 342, height: 700 }}>
+          <div className={styles.canvas} style={{ width: 366, height: 700 }}>
             <svg
               aria-hidden="true"
-              viewBox="0 0 342 700"
+              viewBox="0 0 366 700"
               className={wordStyles.relativesGuides}
               style={{ height: 700 }}
               fill="none"

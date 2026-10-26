@@ -203,25 +203,31 @@
 /* --- relatives zone --- */
 
 .relativesScale {
-  width: 342px;
+  width: 366px;
   /* set per-guest by the --zone-height custom property (page.tsx), so a
      guest with fewer relative links doesn't carry the worst-case guest's
-     dead space; 660px covers the worst case if the var is ever missing. */
-  height: var(--zone-height, 660px);
+     dead space; 540px covers the worst case if the var is ever missing. */
+  height: var(--zone-height, 540px);
+  /* bleeds to the page's edges, same technique as .nameZoneScale -- without
+     this the zone sits inside .page's own 24px padding on top of its own
+     width, and a wide card (left + maxWidth) clips past a 360px viewport.
+     Caught by rendering kindred and kriss-kringle at 360px, not computed. */
+  margin-left: calc(-1 * var(--space-5));
+  margin-right: calc(-1 * var(--space-5));
 }
 
 .relativesZone {
   position: relative;
-  width: 342px;
-  height: var(--zone-height, 660px);
+  width: 366px;
+  height: var(--zone-height, 540px);
 }
 
 .relativesGuides {
   position: absolute;
   left: 0;
   top: 0;
-  width: 342px;
-  height: var(--zone-height, 660px);
+  width: 366px;
+  height: var(--zone-height, 540px);
   overflow: visible;
 }
 
@@ -245,7 +251,7 @@
 .currentTag {
   position: absolute;
   left: 4px;
-  top: 220px;
+  top: 230px;
   box-shadow: 0 10px 12px -6px rgba(40, 30, 10, 0.45);
   transform: rotate(-4deg);
 }
@@ -354,8 +360,8 @@
   }
 
   .relativesScale {
-    width: 360px;
-    height: calc(var(--zone-height, 660px) * 1.05);
+    width: 384px;
+    height: calc(var(--zone-height, 540px) * 1.05);
     overflow: hidden;
   }
 
