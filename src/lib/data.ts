@@ -66,3 +66,12 @@ export function getTable(slug: string): Table | undefined {
 export function getAllTables(): Table[] {
   return tables;
 }
+
+// Floater cameos (CLAUDE.md launch scope): a floater guest's `seenAt` lists
+// the table slugs they wander past, so a table page can show their
+// cameoLines without the table itself needing to know about floaters.
+export function getFloatersAt(tableSlug: string): Guest[] {
+  return guests.filter(
+    (g) => g.role === "floater" && g.seenAt?.includes(tableSlug)
+  );
+}
