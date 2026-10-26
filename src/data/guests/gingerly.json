@@ -9,6 +9,11 @@
   "recordText": "From the 1510s, meaning elegantly, daintily; from about 1600, extremely cautiously. Origin unknown. The OED suggests, as a perhaps, Old French *gensor*, \"more dainty,\" which traces back to the same Latin as *gentle*.",
   "gossipText": "Arrived elegant and became careful. Nobody knows what happened in between, least of all Gingerly.",
   "testimony": "Origin unknown. I know. Please stop looking at me. I was elegant once. Then I got careful. That's not a crime. Is it?",
+  "recordFacts": [
+    "1510s · elegantly, daintily",
+    "cautiously sense: about 1600",
+    "origin unknown"
+  ],
   "clue": { "kind": "colour" },
   "suspect": false,
   "links": [

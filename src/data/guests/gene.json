@@ -9,6 +9,11 @@
   "recordText": "In English from 1911, from German *Gen*, coined in 1905 by the Danish scientist Wilhelm Johannsen, from Greek *genea*, \"generation, race,\" from *gene-. *Kin* comes from the same ancestor: one line spells it with k, the other with g.",
   "gossipText": "The youngest guest at the reunion and the most certain about everything. Thinks he invented the family.",
   "testimony": "He first shows up in English in 1830. That makes him younger than nearly everyone here, and older than me. I checked.",
+  "recordFacts": [
+    "1911 · German Gen",
+    "coined 1905, Wilhelm Johannsen",
+    "genea: \"generation, race\""
+  ],
   "clue": {
     "kind": "step",
     "stepNumber": 6,

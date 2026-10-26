@@ -9,6 +9,10 @@
   "recordText": "From the early 1300s, first of things (\"wicked, sinful\"), later of people. Latin *malignus*: *male*, badly, + *-gnus*, born.",
   "gossipText": "The evil twin, born the same decade, by the same route, from the same root. Was simply born badly, and has made a whole personality of it.",
   "testimony": "Origin: unknown. That's what the record says about him. Unknown! At a family reunion! I'm only saying what everyone's thinking.",
+  "recordFacts": [
+    "early 1300s: \"wicked, sinful\"",
+    "malignus: male (badly) + -gnus (born)"
+  ],
   "clue": null,
   "suspect": false,
   "links": [

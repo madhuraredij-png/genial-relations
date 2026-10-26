@@ -9,6 +9,11 @@
   "recordText": "First recorded in 1830 as *Christ-kinkle*, in a Pennsylvania German setting, from German *Christkindlein*, \"Christ child.\" The second part is a diminutive of *Kind*, child. Etymonline notes the name properly refers to the Christ child, not Santa Claus.",
   "gossipText": "Arrived in a borrowed red suit and has been mistaken for someone else ever since. Too polite to correct anyone.",
   "testimony": "Fine. The suit is borrowed. But my name is family: the end of it is German for 'little child.' Ask anyone at this table.",
+  "recordFacts": [
+    "1830 · Christ-kinkle",
+    "Christkindlein: \"Christ child\"",
+    "properly the Christ child, not Santa"
+  ],
   "clue": { "kind": "colour" },
   "suspect": false,
   "links": [

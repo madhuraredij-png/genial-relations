@@ -9,6 +9,10 @@
   "recordText": "In English from 1852, from German *Kinder-Garten* (1840), \"children's garden,\" a name coined by the educator Friedrich Fröbel.",
   "gossipText": "The self-appointed teacher, even though Kriss Kringle got here 22 years before her. Runs the table like a classroom.",
   "testimony": "Kringle, King. Both start with K, both expect presents. He's royalty, obviously.",
+  "recordFacts": [
+    "1852 · German Kinder-Garten",
+    "coined 1840 by Friedrich Fröbel"
+  ],
   "clue": {
     "kind": "rumour",
     "isDecoy": true,

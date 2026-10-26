@@ -9,6 +9,11 @@
   "recordText": "From the late 1200s, via Old French. Its first English sense was the body's powers of growth and repair. Latin *natura* literally means \"birth.\"",
   "gossipText": "Literally named \"birth.\" Has attended every christening in the family and remembers all of them.",
   "testimony": "I was there for every birth at this table. Gingerly's? No record. No one even knows which language he was born in.",
+  "recordFacts": [
+    "late 1200s · Old French",
+    "first sense: powers of growth and repair",
+    "natura: literally \"birth\""
+  ],
   "clue": null,
   "suspect": false,
   "links": [

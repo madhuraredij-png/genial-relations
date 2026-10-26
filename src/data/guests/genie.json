@@ -9,6 +9,10 @@
   "recordText": "From the 1650s, meaning a guardian spirit, from French *génie*, from Latin *genius*. A French translation of the *Arabian Nights* used it for the Arabic *jinni*, which it happened to resemble; English picked up that sense by 1748.",
   "gossipText": "Genius's little brother, who found a better costume and never took it off.",
   "testimony": "I am family. Latin, like my brother. The lamp was a translator's idea; the words just sounded alike. Is it a crime to commit to a role?",
+  "recordFacts": [
+    "1650s · guardian spirit",
+    "jinni sense: 1748, Arabian Nights"
+  ],
   "clue": { "kind": "colour" },
   "suspect": false,
   "links": [

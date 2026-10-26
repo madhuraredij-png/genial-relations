@@ -9,6 +9,11 @@
   "recordText": "From the 1650s, meaning natural, simple, artless. From French *naïve*, and before that Old French *naif*, which could mean genuine, just born, or foolish. Latin *nativus*, \"born, native.\" Dryden used it in a 1673 comedy as one of the French words a character shows off with.",
   "gossipText": "Arrived as a fashionable French word and still thinks that's what she is.",
   "testimony": "Wait, he's not from a lamp? He did say his real name was Latin. Isn't that… Genius's name?",
+  "recordFacts": [
+    "1650s · natural, simple, artless",
+    "nativus: \"born, native\"",
+    "Dryden's 1673 comedy"
+  ],
   "clue": null,
   "suspect": false,
   "links": [

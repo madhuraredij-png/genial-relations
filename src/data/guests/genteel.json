@@ -9,6 +9,11 @@
   "recordText": "From the 1590s, meaning fashionably elegant. It's the same French word that had come in earlier as *gentle*, borrowed again with the French pronunciation kept on purpose. The OED notes that since the 1840s it has mostly been used in mockery.",
   "gossipText": "Gentle's returning sister, back with an accent and a better coat. Everyone calls her lovely. Nobody means it.",
   "testimony": "He came over from France in the 1650s, the same as some of us. Back then he was a guardian spirit. Very respectable. Very Latin.",
+  "recordFacts": [
+    "1590s · fashionably elegant",
+    "same word as gentle, reborrowed",
+    "used in mockery since 1840s"
+  ],
   "clue": null,
   "suspect": false,
   "links": [

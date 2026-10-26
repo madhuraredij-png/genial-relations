@@ -9,6 +9,11 @@
   "recordText": "From *kin* + *-red*, first recorded around 1200, perhaps from a late Old English *kinraden*. The first *d* doesn't belong: it crept in during the 1600s, probably because it's easier to say, perhaps helped along by *kind*. The *kin* in it is Old English *cynn*, family, from *gene-.",
   "gossipText": "The family historian. Picked up an extra *d* in the 1600s and will not discuss it.",
   "testimony": "There are two stories about him. In one, a king is the leader of the people, meaning our people. In the other, he's from a word for noble birth, a different line entirely. I wrote both down. I underlined neither.",
+  "recordFacts": [
+    "about 1200 · kin + -red",
+    "extra d crept in, 1600s",
+    "kin = Old English cynn"
+  ],
   "clue": null,
   "suspect": false,
   "links": [

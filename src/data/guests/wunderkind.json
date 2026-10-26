@@ -9,6 +9,11 @@
   "recordText": "In English from 1883: a child prodigy, especially in music. From German *Wunderkind*, \"wonder-child.\" The *wonder* half goes back to Old English *wundor*, a word of unknown origin.",
   "gossipText": "The prodigy. Half of her name is family; the other half has no known origin. She doesn't like to discuss it.",
   "testimony": "In German he's König. In Dutch, koning. Every one of them goes back to the same Germanic grandfather, kuningaz. I made a chart.",
+  "recordFacts": [
+    "1883 · child prodigy",
+    "Wunderkind: \"wonder-child\"",
+    "wonder < Old English wundor"
+  ],
   "clue": {
     "kind": "step",
     "stepNumber": 2,

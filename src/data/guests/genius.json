@@ -9,6 +9,10 @@
   "recordText": "From the late 1300s, first a guardian or moral spirit that guides a person through life. Latin *genius* was the spirit watching over each person from birth, originally \"generative power\" or \"inborn nature.\"",
   "gossipText": "Was a guardian spirit before he was a compliment. Still hovers over people when they work.",
   "testimony": "Obviously he's Latin rex. Rex, king. Same title, same family. I don't need to check.",
+  "recordFacts": [
+    "late 1300s · guardian spirit",
+    "genius: \"generative power,\" \"inborn nature\""
+  ],
   "clue": {
     "kind": "rumour",
     "isDecoy": true,

@@ -9,6 +9,10 @@
   "recordText": "From the early 1400s, meaning intellectual, talented. Via Old French from Latin *ingeniosus*, built on *ingenium*, \"that which is inborn.\"",
   "gossipText": "The clever one. Has been mistaken for Ingenuous for four hundred years, Shakespeare included, and has never let it go.",
   "testimony": "Here's the clever bit. His Latin, germen, also sits behind german, as in cousin-german, a first cousin. If the scholars are right, he's family twice over. If they're wrong, he's family nowhere.",
+  "recordFacts": [
+    "early 1400s · intellectual, talented",
+    "ingenium: \"that which is inborn\""
+  ],
   "clue": null,
   "suspect": false,
   "links": [

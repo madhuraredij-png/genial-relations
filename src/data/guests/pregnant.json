@@ -9,6 +9,11 @@
   "recordText": "Two senses that are probably one word. From the late 1300s, of evidence or argument: cogent, convincing, full of meaning. From the early 1400s: with child, from Latin *praegnantem*, literally \"before birth.\" The second sense was avoided in polite conversation until about 1950.",
   "gossipText": "Was convincing before she was expecting. Has carried news around this family for six centuries and was not allowed to say it in polite company for most of them.",
   "testimony": "Listen for the small words: possibly, perhaps, unknown. In this family, they're the loudest words in the room.",
+  "recordFacts": [
+    "late 1300s: \"cogent, convincing\"",
+    "praegnantem: literally \"before birth\"",
+    "avoided in polite talk until 1950"
+  ],
   "clue": { "kind": "colour" },
   "suspect": false,
   "links": [

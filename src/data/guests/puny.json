@@ -9,6 +9,11 @@
   "recordText": "From the 1570s, meaning inferior in rank, and earlier, as a noun, a junior pupil. From Old French *puisné*, \"born later, younger, youngest,\" the opposite of *aisné*, first-born. The sense \"small, weak\" comes in the 1590s. His twin *puisne* came to mean a junior judge.",
   "gossipText": "Literally \"born later.\" Has been seated at the wrong table his whole life and now knows everybody's secrets.",
   "testimony": "Everyone's watching King. Nobody's watching Kindred. The kin in her name is Old English cynn, and that goes straight back to the old man in the portrait. Nobody tells me anything, so I listen.",
+  "recordFacts": [
+    "puisné: \"born later, younger, youngest\"",
+    "small, weak sense: 1590s",
+    "twin word puisne: a junior judge"
+  ],
   "clue": {
     "kind": "rumour",
     "stepNumber": 4,

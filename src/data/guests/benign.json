@@ -9,6 +9,10 @@
   "recordText": "From the early 1300s, via Old French. Latin *benignus*, kindly, is literally \"well born.\"",
   "gossipText": "The good twin. Has been called \"kind\" so often that Kind has started to take it personally.",
   "testimony": "He was elegant once, back in the 1510s. By about 1600 he was tiptoeing everywhere. Something happened in between, and nobody will tell me what.",
+  "recordFacts": [
+    "early 1300s · Old French",
+    "benignus: \"well born\""
+  ],
   "clue": null,
   "suspect": false,
   "links": [
