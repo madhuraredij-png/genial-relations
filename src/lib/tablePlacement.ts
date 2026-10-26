@@ -43,22 +43,35 @@ export function tableTilt(tableSlug: string): number {
   return (seedFloat(`${tableSlug}:tilt`) - 0.5) * 8; // +/-4deg
 }
 
-// Distributes `count` place cards evenly around the oval's edge, starting
-// at the top and going clockwise -- the circular counterpart to
-// RELATIVE_SLOTS in placement.ts, which uses a fixed set of named slots
-// instead because a word page's relatives column always has the same
-// shape. A table's guest count varies (3-5 in the current data), so this
-// computes slot positions instead of hand-authoring one array per count.
+// Distributes `count` cards evenly around an oval's edge, starting at the
+// top and going clockwise -- the circular counterpart to RELATIVE_SLOTS in
+// placement.ts, which uses a fixed set of named slots instead because a
+// word page's relatives column always has the same shape. A table's guest
+// count varies (3-5 in the current data), so this computes slot positions
+// instead of hand-authoring one array per count. Takes an explicit
+// center/radius so both the full-size table page (placeAroundTable below)
+// and the hall page's small table clusters (hallPlacement.ts) can share
+// the same math instead of duplicating it.
+export function placeOnOval(
+  seedKey: string,
+  index: number,
+  count: number,
+  center: { x: number; y: number },
+  radius: { x: number; y: number }
+): CardPlacement {
+  const angle = -90 + (360 / count) * index;
+  const rad = (angle * Math.PI) / 180;
+  const left = center.x + radius.x * Math.cos(rad);
+  const top = center.y + radius.y * Math.sin(rad);
+  const jitter = seedFloat(`${seedKey}:card:${index}`);
+  const rotate = (jitter - 0.5) * 10; // +/-5deg, same scale as placeRelative's jitter
+  return { left, top, rotate };
+}
+
 export function placeAroundTable(
   tableSlug: string,
   index: number,
   count: number
 ): CardPlacement {
-  const angle = -90 + (360 / count) * index;
-  const rad = (angle * Math.PI) / 180;
-  const left = CENTER.x + RADIUS.x * Math.cos(rad);
-  const top = CENTER.y + RADIUS.y * Math.sin(rad);
-  const jitter = seedFloat(`${tableSlug}:card:${index}`);
-  const rotate = (jitter - 0.5) * 10; // +/-5deg, same scale as placeRelative's jitter
-  return { left, top, rotate };
+  return placeOnOval(tableSlug, index, count, CENTER, RADIUS);
 }
