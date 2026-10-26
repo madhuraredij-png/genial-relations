@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# dev-only layout editor save file (local scratch data, not site content)
+.layout-editor-save.json
