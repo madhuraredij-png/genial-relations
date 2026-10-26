@@ -1,0 +1,34 @@
+{
+  "slug": "germ",
+  "word": "germ",
+  "table": "floaters",
+  "role": "floater",
+  "route": "French",
+  "firstUse": "mid-1400s",
+  "eraBand": "1200-1499",
+  "recordText": "From the mid-1400s, meaning bud or sprout; from the 1640s, the start of a new organism. Via French from Latin *germen*, of uncertain origin, perhaps from *gene-. \"Seed of a disease\" is recorded in English in 1796, and \"harmful microorganism\" in 1871. The old sense survives in *wheat germ*.",
+  "gossipText": "Was a bud for centuries. Then 1871 happened, and nobody has shaken his hand since.",
+  "testimony": "Perhaps. That's what they write about me. Perhaps family. I was a bud once, you know. People only remember the other thing.",
+  "recordFacts": [
+    "mid-1400s · bud or sprout",
+    "disease sense: 1796",
+    "microorganism sense: 1871"
+  ],
+  "clue": { "kind": "colour" },
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "perhaps — as in cousin-german", "slug": null },
+    { "type": "gossip", "label": "she's still kind to him", "slug": "genial" },
+    { "type": "gossip", "label": "has a theory about him", "slug": "ingenious" }
+  ],
+  "object": "A seedling",
+  "sources": [
+    { "label": "Etymonline: germ", "url": "https://www.etymonline.com/word/germ" }
+  ],
+  "status": "checked",
+  "cameoLines": [
+    "Something in the bread basket is growing.",
+    "Germ waves from the corner. He's a little bigger than last time."
+  ],
+  "seenAt": ["academics", "kids-table"]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "kind",
+  "word": "kind",
+  "table": "head-table",
+  "role": "guest",
+  "route": "Old English",
+  "firstUse": "Old English",
+  "eraBand": "old-english",
+  "recordText": "The noun comes from Old English *gecynd*, \"kind, nature, race,\" related to *cynn*. Ælfric's Old English Genesis was titled *gecyndboc*. The adjective, \"friendly,\" has its own separate entry.",
+  "gossipText": "Leads a double life: a category by day, a nice person by night. Has two entries in the dictionary and resents being asked which one is real.",
+  "testimony": "Our name is cynn. His is cyning. Close enough to sit together. Not close enough to stop people talking.",
+  "recordFacts": [
+    "gecynd: \"kind, nature, race\"",
+    "related to cynn",
+    "Ælfric's gecyndboc"
+  ],
+  "clue": null,
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "sibling", "slug": "kindred" },
+    { "type": "gossip", "label": "they're both called \"kind\" behind their backs", "slug": "benign" },
+    { "type": "across-the-room", "label": "at the kids' table — \"My German nephew. Same word for child.\"", "slug": "kindergarten" }
+  ],
+  "object": "Two name tags pinned together",
+  "sources": [
+    { "label": "Etymonline: kind", "url": "https://www.etymonline.com/word/kind" }
+  ],
+  "status": "checked"
+}

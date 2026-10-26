@@ -1,0 +1,201 @@
+.page {
+  padding: var(--space-5);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-2);
+}
+
+.intro {
+  font-size: var(--font-size-sm);
+  color: var(--color-pencil);
+  margin-bottom: var(--space-5);
+  max-width: 640px;
+}
+
+.controlsBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  margin-bottom: var(--space-6);
+  background: #fff;
+  border: 1px solid var(--color-ink);
+}
+
+.controlsBar label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+}
+
+.controlsBar select {
+  font: inherit;
+  padding: var(--space-1) var(--space-2);
+}
+
+.resetButton {
+  font-size: var(--font-size-sm);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-ink);
+  background: var(--color-paper);
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.section {
+  margin-bottom: var(--space-8);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+  border-top: 1px solid var(--color-ink);
+  padding-top: var(--space-2);
+}
+
+.sectionNote {
+  font-size: var(--font-size-xs);
+  color: var(--color-pencil);
+  margin-bottom: var(--space-4);
+  max-width: 640px;
+}
+
+.editorGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  align-items: flex-start;
+}
+
+.canvas {
+  position: relative;
+  flex: 0 0 auto;
+  background: #fff;
+  outline: 1px dashed rgba(35, 48, 110, 0.4);
+  overflow: visible;
+}
+
+.panel {
+  flex: 1 1 260px;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.slotRow {
+  padding: var(--space-3);
+  border: 1px solid rgba(20, 20, 20, 0.15);
+  background: #fff;
+}
+
+.slotRowTitle {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: var(--font-size-xs);
+  color: var(--color-pencil);
+}
+
+.field input {
+  font: inherit;
+  padding: 4px 6px;
+  border: 1px solid rgba(20, 20, 20, 0.3);
+  color: var(--color-ink);
+}
+
+.codeBlock {
+  width: 100%;
+  min-height: 140px;
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  padding: var(--space-3);
+  border: 1px solid var(--color-ink);
+  background: #fcfbf7;
+  resize: vertical;
+}
+
+.copyButton {
+  align-self: flex-start;
+  font-size: var(--font-size-sm);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-ink);
+  background: var(--color-ink);
+  color: var(--color-paper);
+  cursor: pointer;
+  margin-top: var(--space-2);
+}
+
+.copyButton:hover {
+  opacity: 0.85;
+}
+
+.draggable {
+  cursor: grab;
+  touch-action: none;
+}
+
+.draggable:active {
+  cursor: grabbing;
+}
+
+.saveStatus {
+  font-size: var(--font-size-xs);
+  color: var(--color-pencil);
+}
+
+.pathGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  align-items: flex-start;
+}
+
+.pathEditorBlock {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-width: 320px;
+}
+
+.pathCanvas {
+  background: #fff;
+  outline: 1px dashed rgba(35, 48, 110, 0.4);
+  overflow: visible;
+}
+
+.handleHit {
+  cursor: grab;
+  touch-action: none;
+  pointer-events: all;
+}
+
+.handleHit:active {
+  cursor: grabbing;
+}

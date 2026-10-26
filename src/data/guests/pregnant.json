@@ -1,0 +1,34 @@
+{
+  "slug": "pregnant",
+  "word": "pregnant",
+  "table": "floaters",
+  "role": "floater",
+  "route": "Old French / Latin",
+  "firstUse": "late 1300s / early 1400s",
+  "eraBand": "1200-1499",
+  "recordText": "Two senses that are probably one word. From the late 1300s, of evidence or argument: cogent, convincing, full of meaning. From the early 1400s: with child, from Latin *praegnantem*, literally \"before birth.\" The second sense was avoided in polite conversation until about 1950.",
+  "gossipText": "Was convincing before she was expecting. Has carried news around this family for six centuries and was not allowed to say it in polite company for most of them.",
+  "testimony": "Listen for the small words: possibly, perhaps, unknown. In this family, they're the loudest words in the room.",
+  "recordFacts": [
+    "late 1300s: \"cogent, convincing\"",
+    "praegnantem: literally \"before birth\"",
+    "avoided in polite talk until 1950"
+  ],
+  "clue": { "kind": "colour" },
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "both \"born\" words", "slug": "nature" },
+    { "type": "blood", "label": "both \"born\" words", "slug": "naive" },
+    { "type": "gossip", "label": "old friends", "slug": "genial" }
+  ],
+  "object": "A sealed envelope (the news)",
+  "sources": [
+    { "label": "Etymonline: pregnant", "url": "https://www.etymonline.com/word/pregnant" }
+  ],
+  "status": "checked",
+  "cameoLines": [
+    "Pregnant pauses by the table. The pause is full of meaning.",
+    "'I have news,' says Pregnant, and leaves."
+  ],
+  "seenAt": ["head-table", "old-money", "academics", "back-with-an-accent", "kids-table"]
+}

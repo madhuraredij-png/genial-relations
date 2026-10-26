@@ -1,0 +1,34 @@
+{
+  "slug": "kids-table",
+  "name": "Kids' table",
+  "route": "German",
+  "event": "The Santa suit",
+  "guests": ["kindergarten", "kriss-kringle", "gene", "wunderkind"],
+  "setupLines": [
+    "A guest in a red suit is handing out presents. The beard is slipping.",
+    "Gene is explaining heredity with crayons. Nobody asked.",
+    "\"Grown-ups have their own table,\" says Kindergarten, to Puny, who is grown up."
+  ],
+  "pointerLines": {
+    "kindergarten": [
+      "Kindergarten has worked something out about names. Ask her.",
+      "Ask Kindergarten. She runs this table, and she'll remind you.",
+      "Kindergarten keeps looking at the beard."
+    ],
+    "kriss-kringle": [
+      "Ask the man in the suit. He's expecting you.",
+      "Kriss Kringle wants to clear his name. Let him.",
+      "Ask Kriss Kringle what's under the beard."
+    ],
+    "gene": [
+      "Gene has the dates. Gene always has the dates.",
+      "Ask Gene. He'll make a chart.",
+      "Gene says he can prove who's related to whom. He's very young."
+    ],
+    "wunderkind": [
+      "Wunderkind looked him up. Of course Wunderkind looked him up.",
+      "Ask Wunderkind. Prodigies notice things.",
+      "Wunderkind isn't impressed by the suit. Ask why."
+    ]
+  }
+}

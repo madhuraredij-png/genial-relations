@@ -1,0 +1,28 @@
+{
+  "slug": "generous",
+  "word": "generous",
+  "table": "back-with-an-accent",
+  "role": "guest",
+  "route": "French",
+  "firstUse": "1580s",
+  "eraBand": "1500-1699",
+  "recordText": "From the 1580s, meaning \"of noble birth,\" via French from Latin *generosus*. The sense \"unselfish\" comes in the 1690s.",
+  "gossipText": "Born noble, now merely nice, and covering for everyone.",
+  "testimony": "Since 1748 he's been introducing himself in English as the lamp fellow. I let it go. I let everything go. It's my whole thing.",
+  "recordFacts": [
+    "1580s: \"of noble birth\"",
+    "unselfish sense: 1690s"
+  ],
+  "clue": null,
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "same story: born noble, now kind", "slug": "benign" },
+    { "type": "gossip", "label": "", "slug": "genial" },
+    { "type": "across-the-room", "label": "at Old money", "slug": "benign" }
+  ],
+  "object": "A gift tag",
+  "sources": [
+    { "label": "Etymonline: generous", "url": "https://www.etymonline.com/word/generous" }
+  ],
+  "status": "checked"
+}

@@ -1,0 +1,28 @@
+# Backlog
+
+Deferred items, with why.
+
+## From session 01
+
+- **Typography Layer 2 (meaning tags) and Layer 3 (variable axes).** This session renders names in era font only. Tag-driven size/weight/spacing and Fraunces variable axes are not wired up yet. Reason: out of this session's explicit scope.
+- **`senses` field on the guest schema.** `spec.md`'s data model calls for a `senses` array (meanings over time, oldest first), which means splitting each guest's prose `recordText` into discrete bullets — an interpretive edit, not a verbatim copy. Madhura chose to defer this (2026-10-23) rather than review 25 splits this session. The schema keeps `senses` optional for when the numbered-callout name treatment is built.
+- **Auto-pinning, the evidence row, the verdict card, endings 1 and 6, the trail card.** All explicitly out of scope this session. The step/rumour/colour clue data exists in the schema and guest JSON so a future session can build the pinning mechanic without re-deriving it from `docs/content.md`.
+- **Motion (the Motion library).** Not installed or used this session; CLAUDE.md allows it but nothing here needs it yet.
+- **Vercel Web Analytics + custom events (`reached_verdict`, `downloaded_trail_card`).** No verdict or trail card exists yet, so there's nothing to track. Add `@vercel/analytics` when those features land.
+- **Floater placement logic** ("scattered at random between tables"). Floater guest pages exist, but the hall doesn't yet place them with randomized positioning — out of scope this session (motion/placement polish).
+- **Marginalia artwork.** All 25 objects stay as dashed `[object · guest]` placeholders per content.md, pending Madhura's drawings.
+- **Layer 2 `typeTags` for 19 of 25 guests.** `spec.md` states "Madhura approves tags," and only 6 guests have a documented tag anywhere in the docs: puny (small), king (grand, contested — the schema allows more than one, since king is the one documented example with two), gentle/genteel (gentle), naive/kind (plain). The schema field (`guest.ts`) is `typeTags: z.array(TypeTagSchema).optional()` so it can be populated guest-by-guest once Madhura assigns the rest; left absent for the other 19 rather than guessed.
+- **`senses` field, still deferred** (see above) — now that all 25 guests have JSON records, the 25 `recordText` → `senses` splits are ready to do in one pass whenever Madhura wants to review them.
+
+## From session 01, Gate 4
+
+- **Table pages pulled forward into scope.** Originally deferred (see the old entry above, now removed). Madhura asked mid-session (2026-10-23) for table pages as "a zoomed-in view of the reunion hall," so `/table/[slug]` was built this gate: table name, route/event, one fixed setup line, each seated guest linking to their word page with one fixed pointer line beneath, and a link back to the hall. No evidence column (CLAUDE.md's desktop Table page spec calls for one) — that's still out of scope under auto-pinning/evidence row above.
+- **`senses` field, still separately deferred.** The new `recordFacts` field (added this session for the king prototype's numbered callouts) is deliberately not the same field — see the CHANGELOG entry "illustration prototype" for the spec.md-vs-CLAUDE.md definition mismatch that caused this split. `senses` (meanings-over-time only) remains exactly as deferred above; this doesn't resolve it.
+
+## From session 01, illustration prototype
+
+- **Full mockup visual system — rolled out to king only, as a prototype.** `/prototype/king` (not linked from anywhere, not part of the real site) now has the numbered-callout name zone, lined-paper testimony card, pencil/crayon SVG decoration, and programmatically-placed relative place-cards. The 24 other word pages, all 5 table pages, and the hall still use the plain Gate 4 layout. Waiting on Madhura's review before rolling out further.
+- **`recordFacts` data only exists for king.** The other 24 guests need their own `recordFacts` arrays (short, verbatim-derived captions split at `recordText`'s sentence boundaries) before the numbered-callout treatment can apply to their word pages. Not done — one guest's worth of interpretive splitting was the explicitly agreed prototype scope this session.
+- **Table page and hall page illustration.** The mockups' oval table-shape SVGs (Madhura: "I generate varied organic shapes") and the hall's full room illustration are not built yet — only the word page got the prototype treatment this round.
+- **Marginalia objects stay plain placeholders even in the illustrated version.** Madhura explicitly chose "keep it plain" for the 25 undrawn guest objects rather than placeholder-styling them to look more finished — unchanged from the original marginalia deferral above.
+- **Snippet rotation / generation, not fixed.** Each table's `setupLines` and each guest's `pointerLines` carry 3 hand-written variants in the JSON, but CLAUDE.md locks "snippet rotation... not in launch" and "never invent copy." Madhura asked for snippets that regenerate each visit, stay funny, and point at clues without repeating — real content generation, which conflicts with both locks and needs its own design pass (template system vs. LLM call; the latter also runs into "no backend in v1"). Decided this session: ship Gate 4 with the fixed first-listed variant (`setupLines[0]`, `pointerLines[guest][0]`) so the gate isn't blocked, and design the generation feature properly in a future session. Flagged, not built.

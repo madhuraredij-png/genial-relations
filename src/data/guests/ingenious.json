@@ -1,0 +1,30 @@
+{
+  "slug": "ingenious",
+  "word": "ingenious",
+  "table": "academics",
+  "role": "guest",
+  "route": "Old French + Latin",
+  "firstUse": "early 1400s",
+  "eraBand": "1200-1499",
+  "recordText": "From the early 1400s, meaning intellectual, talented. Via Old French from Latin *ingeniosus*, built on *ingenium*, \"that which is inborn.\"",
+  "gossipText": "The clever one. Has been mistaken for Ingenuous for four hundred years, Shakespeare included, and has never let it go.",
+  "testimony": "Here's the clever bit. His Latin, germen, also sits behind german, as in cousin-german, a first cousin. If the scholars are right, he's family twice over. If they're wrong, he's family nowhere.",
+  "recordFacts": [
+    "early 1400s · intellectual, talented",
+    "ingenium: \"that which is inborn\""
+  ],
+  "clue": null,
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "both from *ingenium*", "slug": "engine" },
+    { "type": "blood", "label": "same root, different Latin word", "slug": "ingenuous" },
+    { "type": "gossip", "label": "\"stop sitting in my seat\"", "slug": "ingenuous" },
+    { "type": "across-the-room", "label": "at Old money", "slug": "engine" }
+  ],
+  "object": "A folded diagram",
+  "sources": [
+    { "label": "Etymonline: ingenious", "url": "https://www.etymonline.com/word/ingenious" }
+  ],
+  "status": "checked",
+  "notes": ["Open item from content.md: seated with the academics, but its route is Old French + Latin — kept at academics per spec.md's v1 scope table, flagged rather than moved"]
+}

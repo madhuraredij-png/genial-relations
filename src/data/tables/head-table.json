@@ -1,0 +1,29 @@
+{
+  "slug": "head-table",
+  "name": "Head table",
+  "route": "Old English",
+  "event": "The toast",
+  "guests": ["kindred", "kind", "king"],
+  "setupLines": [
+    "Kindred taps a glass. Nobody stops talking. King stands up anyway.",
+    "\"Whoever gives the toast sits at the head,\" says Kind. King is already sitting there.",
+    "The seating chart has been rewritten three times, all in King's handwriting."
+  ],
+  "pointerLines": {
+    "kindred": [
+      "Ask Kindred, she wrote the guest list.",
+      "Kindred keeps the family records. Kindred also keeps grudges.",
+      "Kindred hasn't said a word to King all night. That's a word in itself."
+    ],
+    "kind": [
+      "Kind knows more than she's letting on. She always does.",
+      "Kind has two names on her place card. Ask her why.",
+      "Ask Kind. She was there when the family wrote things down."
+    ],
+    "king": [
+      "Ask King yourself. He's dying to tell you.",
+      "King has a quote ready. He's had it ready for generations.",
+      "Someone should ask King for his papers. Nobody has the nerve."
+    ]
+  }
+}

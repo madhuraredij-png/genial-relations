@@ -1,0 +1,34 @@
+{
+  "slug": "academics",
+  "name": "The academics",
+  "route": "Latin",
+  "event": "The swapped place cards",
+  "guests": ["genius", "genial", "ingenious", "ingenuous"],
+  "setupLines": [
+    "Ingenious is sitting in Ingenuous's seat. Ingenuous hasn't noticed. Ingenuous never notices.",
+    "Genius is explaining footnotes to someone who didn't ask.",
+    "Something small in the corner has doubled in size since the soup."
+  ],
+  "pointerLines": {
+    "genius": [
+      "Genius has been keeping an eye on him. It's literally his job.",
+      "Ask Genius. He'll tell you anyway.",
+      "Genius says he knew Germ before he went bad."
+    ],
+    "genial": [
+      "Genial thinks Germ is lovely. Ask her what she doesn't know.",
+      "Genial arranged half the marriages here. Ask her about his parents.",
+      "Ask Genial. She's the only one still smiling."
+    ],
+    "ingenious": [
+      "Ingenious has a theory with a diagram.",
+      "Ask Ingenious. The clever one. No, the other clever one.",
+      "Ingenious found something in the Latin."
+    ],
+    "ingenuous": [
+      "Ingenuous believes everything Germ told her. Ask what he told her.",
+      "Ask Ingenuous. She'll say yes to anything.",
+      "Ingenuous has been sitting in the wrong seat all night. She'll tell you everything."
+    ]
+  }
+}

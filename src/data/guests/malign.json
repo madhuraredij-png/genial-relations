@@ -1,0 +1,28 @@
+{
+  "slug": "malign",
+  "word": "malign",
+  "table": "old-money",
+  "role": "guest",
+  "route": "Old French",
+  "firstUse": "early 1300s",
+  "eraBand": "1200-1499",
+  "recordText": "From the early 1300s, first of things (\"wicked, sinful\"), later of people. Latin *malignus*: *male*, badly, + *-gnus*, born.",
+  "gossipText": "The evil twin, born the same decade, by the same route, from the same root. Was simply born badly, and has made a whole personality of it.",
+  "testimony": "Origin: unknown. That's what the record says about him. Unknown! At a family reunion! I'm only saying what everyone's thinking.",
+  "recordFacts": [
+    "early 1300s: \"wicked, sinful\"",
+    "malignus: male (badly) + -gnus (born)"
+  ],
+  "clue": null,
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "twin", "slug": "benign" },
+    { "type": "gossip", "label": "they both say nice things only in mockery", "slug": "genteel" },
+    { "type": "across-the-room", "label": "at Back with an accent", "slug": "genteel" }
+  ],
+  "object": "A napkin with one word underlined",
+  "sources": [
+    { "label": "Etymonline: malign", "url": "https://www.etymonline.com/word/malign" }
+  ],
+  "status": "checked"
+}

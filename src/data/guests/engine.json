@@ -1,0 +1,29 @@
+{
+  "slug": "engine",
+  "word": "engine",
+  "table": "old-money",
+  "role": "guest",
+  "route": "Old French",
+  "firstUse": "about 1300",
+  "eraBand": "1200-1499",
+  "recordText": "From about 1300, first a mechanical device, especially for war, but also skill, cleverness, even trickery. Old French *engin*, from Latin *ingenium*, \"inborn character.\" The sense of a machine that turns energy into motion arrives in the 1700s.",
+  "gossipText": "Was born a talent and became a machine. Still describes himself as \"a natural gift.\" Nobody has the heart to correct him.",
+  "testimony": "I ran the mechanism. Latin well-born, to Old French dainty, to more dainty, to Gingerly. It works on paper. Nobody has ever found the parts.",
+  "recordFacts": [
+    "about 1300 · Old French engin",
+    "ingenium: \"inborn character\"",
+    "machine sense: 1700s"
+  ],
+  "clue": null,
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "both from *ingenium*", "slug": "ingenious" },
+    { "type": "gossip", "label": "two technical types", "slug": "gene" },
+    { "type": "across-the-room", "label": "at the academics", "slug": "ingenious" }
+  ],
+  "object": "A wind-up key",
+  "sources": [
+    { "label": "Etymonline: engine", "url": "https://www.etymonline.com/word/engine" }
+  ],
+  "status": "checked"
+}

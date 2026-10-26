@@ -1,0 +1,53 @@
+/*
+  Design tokens: one global file of CSS custom properties.
+  Values are locked decisions from CLAUDE.md "Visual system" and
+  docs/spec.md "Visual direction" / "Typography system".
+
+  Note: CSS custom properties cannot be used inside @media conditions,
+  so the breakpoint values below are for reference/JS use only. Media
+  queries elsewhere in the codebase use the literal pixel values
+  390px and 1440px directly.
+*/
+
+:root {
+  /* Breakpoints (reference only, see note above) */
+  --breakpoint-phone: 390px;
+  --breakpoint-desktop: 1440px;
+
+  /* Colour: paper, ink, pencil, drawings */
+  --color-paper: #f7f4ee;
+  --color-ink: #141414;
+  --color-pencil: #6e6e6e;
+  --color-navy: #23306e;
+
+  /* Colour: crayon marks (rotate across these five) */
+  --color-crayon-red: #d23a2a;
+  --color-crayon-green: #2e8b3e;
+  --color-crayon-blue: #2a6fdb;
+  --color-crayon-yellow: #e8b923;
+  --color-crayon-orange: #e8792b;
+
+  /* Spacing scale (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Type sizes */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-body: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 26px;
+  --font-size-pencil: 24px;
+  --font-size-name-phone: 52px;
+  --font-size-name-desktop: 64px;
+
+  /* Body faces (set by next/font in src/lib/fonts.ts; referenced here by name) */
+  --font-body: var(--font-inconsolata), ui-monospace, monospace;
+  --font-pencil: var(--font-reenie-beanie), cursive;
+}

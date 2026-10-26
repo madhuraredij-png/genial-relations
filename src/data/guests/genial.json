@@ -1,0 +1,30 @@
+{
+  "slug": "genial",
+  "word": "genial",
+  "table": "academics",
+  "role": "guest",
+  "route": "Latin",
+  "firstUse": "1560s",
+  "eraBand": "1500-1699",
+  "recordText": "From the 1560s, meaning \"pertaining to marriage,\" from Latin *genialis*, festive, originally of wedding rites. It meant \"cheerful, friendly\" by 1746.",
+  "gossipText": "Started out as the wedding planner. Now she's just pleasant. Still keeps a list of who married whom.",
+  "testimony": "Lovely boy, very wholesome. Wheat germ, you know. But his Latin is of uncertain origin. I've married off half this family, and I couldn't tell you who his parents are.",
+  "recordFacts": [
+    "1560s: \"pertaining to marriage\"",
+    "genialis: festive, wedding rites",
+    "cheerful, friendly by 1746"
+  ],
+  "clue": null,
+  "suspect": false,
+  "links": [
+    { "type": "blood", "label": "from his name", "slug": "genius" },
+    { "type": "gossip", "label": "old friends", "slug": "pregnant" },
+    { "type": "across-the-room", "label": "wherever she's floating", "slug": "pregnant" }
+  ],
+  "object": "A wedding ribbon",
+  "sources": [
+    { "label": "Etymonline: genial", "url": "https://www.etymonline.com/word/genius" }
+  ],
+  "status": "checked",
+  "notes": ["content.md's record line links to /word/genius, not /word/genial — kept verbatim, flagged for Madhura to re-check"]
+}
