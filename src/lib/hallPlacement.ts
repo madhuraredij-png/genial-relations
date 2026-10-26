@@ -38,6 +38,31 @@ export const FLOATER_SLOTS: FloaterSlot[] = [
   { slug: "pregnant", left: 58, top: 728 },
 ];
 
+// Desktop has its own hand-drawn arrangement in Desktop-Main.html -- not a
+// scaled-up version of the phone one (same as Desktop-Table.html vs
+// Table.html). A naive CSS `transform: scale()` of the phone layout was
+// tried first and looked wrong: the phone map is a single narrow column of
+// stacked ovals, so scaling it just makes a narrow column sit in the
+// middle of a wide screen, instead of spreading across it the way the
+// mockup actually does. These numbers are the oval centers/radii measured
+// directly from Desktop-Main.html's own SVG paths.
+export const DESKTOP_VIEWBOX = { width: 1440, height: 900 };
+
+export const HALL_TABLE_SLOTS_DESKTOP: HallTableSlot[] = [
+  { slug: "head-table", center: { x: 714, y: 254 }, radius: { x: 246, y: 122 } },
+  { slug: "old-money", center: { x: 270.5, y: 530 }, radius: { x: 173.5, y: 102 } },
+  { slug: "academics", center: { x: 1172, y: 497 }, radius: { x: 164, y: 92 } },
+  { slug: "back-with-an-accent", center: { x: 497, y: 765 }, radius: { x: 181, y: 85 } },
+  { slug: "kids-table", center: { x: 1012, y: 767 }, radius: { x: 160, y: 79 } },
+];
+
+export const FLOATER_SLOTS_DESKTOP: FloaterSlot[] = [
+  { slug: "genie", left: 110, top: 120 },
+  { slug: "germ", left: 1170, top: 150 },
+  { slug: "gingerly", left: 690, top: 470 },
+  { slug: "pregnant", left: 60, top: 770 },
+];
+
 export interface NameStyle {
   fontSize: number;
   fontWeight?: number;
@@ -62,4 +87,21 @@ const NAME_VARIANTS: NameStyle[] = [
 export function nameStyleVariant(guestSlug: string): NameStyle {
   const index = Math.floor(seedFloat(`${guestSlug}:hall-style`) * NAME_VARIANTS.length);
   return NAME_VARIANTS[index];
+}
+
+// Same per-guest variant tier as nameStyleVariant (same seed, same index),
+// just at the larger font sizes Desktop-Main.html actually uses (measured
+// ~1.45x the phone ones) -- a guest that reads "bold and biggest" on phone
+// reads that way on desktop too, not a different random look per
+// breakpoint.
+const NAME_VARIANTS_DESKTOP: NameStyle[] = [
+  { fontSize: 23, fontWeight: 600 },
+  { fontSize: 19, fontStyle: "italic" },
+  { fontSize: 15, textTransform: "uppercase", letterSpacing: "0.12em" },
+  { fontSize: 17 },
+];
+
+export function nameStyleVariantDesktop(guestSlug: string): NameStyle {
+  const index = Math.floor(seedFloat(`${guestSlug}:hall-style`) * NAME_VARIANTS_DESKTOP.length);
+  return NAME_VARIANTS_DESKTOP[index];
 }
