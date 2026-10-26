@@ -1,99 +1,366 @@
 .page {
+  position: relative;
   max-width: 900px;
   margin: 0 auto;
   padding: var(--space-5);
+  background: var(--color-paper);
   display: flex;
   flex-direction: column;
   gap: var(--space-6);
 }
 
-.word {
+.topNav {
+  font-size: var(--font-size-sm);
+}
+
+.topNav a {
+  text-decoration: none;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+
+/* --- name zone --- */
+
+.nameZoneScale {
+  width: 390px;
+  height: 300px;
+  margin-left: calc(-1 * var(--space-5));
+  margin-right: calc(-1 * var(--space-5));
+}
+
+.nameZone {
+  position: relative;
+  width: 390px;
+  height: 300px;
+}
+
+.nameGuides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 390px;
+  height: 300px;
+}
+
+.name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 104px;
+  margin: 0;
+  text-align: center;
   font-size: var(--font-size-name-phone);
-  line-height: 1.1;
-  margin: 0 0 var(--space-2);
+  line-height: 1;
 }
 
-.route {
+.objectPlaceholder {
+  position: absolute;
+  left: 256px;
+  top: 120px;
+  width: 92px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.2px dashed rgba(35, 48, 110, 0.7);
+  border-radius: 50% 44% 52% 48%;
   font-size: var(--font-size-xs);
-  color: var(--color-pencil);
-  margin: 0 0 var(--space-4);
+  text-align: center;
+  line-height: 1.2;
+  color: var(--color-navy);
 }
 
-.record {
+.callout {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  /* max-width comes from each CALLOUT_SLOTS entry (placement.ts), set
+     inline per callout — see Bug A note above CALLOUT_SLOTS for why slot 1
+     needs a narrower box than the others. */
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.calloutNumber {
+  flex: 0 0 auto;
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-crayon-green);
+  font-size: 11px;
+  filter: url(#crayon);
+}
+
+/* --- record facts list --- */
+
+.recordList {
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
   font-size: var(--font-size-body);
-  line-height: 1.5;
-  margin: 0 0 var(--space-4);
+  line-height: 1.45;
+}
+
+.recordItem {
+  display: flex;
+  gap: var(--space-3);
 }
 
 .sources {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: var(--space-3) 0 0;
   font-size: var(--font-size-xs);
+}
+
+/* --- voice column --- */
+
+.voiceColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
 }
 
 .pencil {
   font-family: var(--font-pencil);
   color: var(--color-pencil);
+  filter: url(#pencil);
+}
+
+.gossipWrap {
+  position: relative;
 }
 
 .gossip {
+  position: relative;
+  margin: 0;
   font-size: var(--font-size-pencil);
   line-height: 1.3;
-  margin: 0 0 var(--space-4);
 }
 
-.testimony {
-  font-size: var(--font-size-body);
-  line-height: 1.5;
-  margin: 0 0 var(--space-4);
+.gossipSquiggle {
+  position: absolute;
+  left: 50px;
+  top: -8px;
+  width: 150px;
+  height: 44px;
+  overflow: visible;
 }
 
-.links {
-  list-style: none;
-  padding: 0;
+.testimonyWrap {
+  position: relative;
+  margin-top: var(--space-4);
+}
+
+.testimonyCard {
+  padding: var(--space-4) var(--space-5) var(--space-3);
+  background-color: #fffef9;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0 25px,
+    rgba(42, 111, 219, 0.22) 25px 26px
+  );
+  background-position: 0 12px;
+  box-shadow: 0 6px 8px -5px rgba(40, 30, 10, 0.35);
+  transform: rotate(-1.5deg);
+}
+
+.testimonyText {
   margin: 0;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-pencil);
+  line-height: 1.1;
+}
+
+.pushpin {
+  position: absolute;
+  left: 34px;
+  top: -20px;
+  width: 12px;
+  height: 34px;
+  transform: rotate(-8deg);
+  overflow: visible;
+}
+
+.paperclip {
+  position: absolute;
+  right: 6px;
+  top: -16px;
+  width: 20px;
+  height: 30px;
+}
+
+/* --- relatives zone --- */
+
+.relativesScale {
+  width: 342px;
+  /* set per-guest by the --zone-height custom property (page.tsx), so a
+     guest with fewer relative links doesn't carry the worst-case guest's
+     dead space; 660px covers the worst case if the var is ever missing. */
+  height: var(--zone-height, 660px);
+}
+
+.relativesZone {
+  position: relative;
+  width: 342px;
+  height: var(--zone-height, 660px);
+}
+
+.relativesGuides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 342px;
+  height: var(--zone-height, 660px);
+  overflow: visible;
+}
+
+.placeCard {
+  display: inline-block;
+  padding: 7px 11px 5px;
+  background: linear-gradient(
+    to bottom,
+    #e9e2d3 0%,
+    #efe9dd 32%,
+    #fffdf8 35%,
+    #faf6ee 100%
+  );
+  box-shadow: 0 5px 6px -4px rgba(40, 30, 10, 0.45);
+  line-height: 1;
+  text-decoration: none;
+  color: var(--color-ink);
+  font-size: 20px;
+}
+
+.currentTag {
+  position: absolute;
+  left: 4px;
+  top: 220px;
+  box-shadow: 0 10px 12px -6px rgba(40, 30, 10, 0.45);
+  transform: rotate(-4deg);
+}
+
+.currentTagZigzag {
+  position: absolute;
+  left: 6px;
+  bottom: -11px;
+  width: 56px;
+  height: 10px;
+  overflow: visible;
+}
+
+.relativeGroup {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  gap: var(--space-2);
+  align-items: flex-start;
+  gap: var(--space-3);
+  max-width: 130px;
 }
 
-.nav {
+.relativeCaption {
+  margin: 0;
+  font-size: var(--font-size-pencil);
+  line-height: 1.05;
+}
+
+.pointerLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  max-width: 130px;
+  font-size: var(--font-size-sm);
+  color: var(--color-ink);
+  text-decoration: none;
+  white-space: normal;
+}
+
+/* --- nav --- */
+
+.pillNav {
   display: flex;
   justify-content: center;
-  gap: var(--space-5);
-  font-size: var(--font-size-sm);
+  gap: var(--space-3);
   padding-top: var(--space-5);
-  border-top: 1px solid var(--color-ink);
+}
+
+.pillSolid,
+.pillOutline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 var(--space-5);
+  border-radius: 999px;
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.pillSolid {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-weight: 600;
+}
+
+.pillOutline {
+  border: 1.6px solid var(--color-ink);
+  color: var(--color-ink);
 }
 
 @media (min-width: 1440px) {
   .page {
     max-width: 1200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "record voice"
-      "nav nav";
-    gap: var(--space-7);
-    min-height: 900px;
-    align-content: start;
+  }
+
+  .columns {
+    flex-direction: row;
+    gap: var(--space-8);
+    align-items: flex-start;
   }
 
   .recordColumn {
-    grid-area: record;
+    flex: 0 0 488px;
   }
 
   .voiceColumn {
-    grid-area: voice;
+    flex: 1;
+    padding-top: var(--space-5);
   }
 
-  .nav {
-    grid-area: nav;
+  .nameZoneScale {
+    width: 488px;
+    height: 375px;
+    overflow: hidden;
   }
 
-  .word {
-    font-size: var(--font-size-name-desktop);
+  .nameZone {
+    transform: scale(1.25);
+    transform-origin: 0 0;
+  }
+
+  .gossip {
+    font-size: 34px;
+  }
+
+  .relativesScale {
+    width: 360px;
+    height: calc(var(--zone-height, 660px) * 1.05);
+    overflow: hidden;
+  }
+
+  .relativesZone {
+    transform: scale(1.05);
+    transform-origin: 0 0;
   }
 }
